@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/ato.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/gonglue.css"/>
+		<link rel="stylesheet" type="text/css" href="css/iconfont.css"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<script type="application/x-javascript">
+			addEventListener("load", function() {
+				setTimeout(hideURLbar, 0);
+			}, false);
+
+			function hideURLbar() {
+				window.scrollTo(0, 1);
+			}
+		</script>
+		<!-- //Custom Theme files -->
+		<!-- js -->
+		<script src="https://ajax.useso.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<!-- //js -->
+		<!-- start-smoth-scrolling-->
+		<script type="text/javascript" src="js/move-top.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event) {
+					event.preventDefault();
+					$('html,body').animate({
+						scrollTop: $(this.hash).offset().top
+					}, 1000);
+				});
+			});
+		</script>
+
+	</head>
+
+	<body style="background: url(images/allbac.jpg);background-attachment:fixed;background-repeat:no-repeat;">
+		<!--顶部-->
+		<div class="header_top">
+			<ul class="index_top_nav" id="user_login_info">
+				<div class="login_menu clearfix">
+					<li>
+						<div id="user_right">
+							<!--<a id="user_login" style="cursor: pointer;">登录</a>-->
+						</div>
+					</li>
+					<li>
+						<a target="_blank"><img src="images/registgift.gif" alt="会员注册有礼" style="height: 22px;line-height: 22px; vertical-align: middle;"></a>
+					</li>
+				</div>
+			</ul>
+			<ul class="index_top_nav nav_right" id="index_top_right">
+				<li class="nav_item item_order">
+					<a target="_blank" rel="nofollow" style="color: #ff8800;">企业频道</a>
+				</li>
+				<li class="nav_item item_order" id="club">
+					<a target="_blank" style="color: #ff8800;">会员俱乐部</a>
+				</li>
+				<li class="nav_item item_order is_order has_arrow has_dropdown">
+					我的订单
+					<i class="header_icon icon_arrow"></i>
+				</li>
+				<li class="nav_item item_siteMap has_arrow has_dropdown">
+					<a>网站地图</a>
+					<i class="header_icon icon_arrow"></i>
+				</li>
+				<li class="nav_item item_weibo">
+					<a class="header_icon icon_weibo vm" rel="nofollow" target="_blank"></a>
+				</li>
+				<li class="nav_item item_qrCode has_dropdown">
+					<i class="header_icon icon_phone" id="isPcOrMobile"><a  class="sitenav_mobile"  target="_blank" rel="nofollow"></a></i>
+				</li>
+				<li class="nav_item item_weixin has_dropdown">
+					<a class="header_icon icon_weixin vm" rel="nofollow" href="#"></a>
+				</li>
+				<li class="nav_item item_mailbox">
+					<a class="header_icon icon_mailbox vm" target="_blank"></a>
+				</li>
+
+			</ul>
+		</div>
+
+		<!--顶部下方-->
+
+		<div class="header_search" style="width: 70%;margin-left: 15%;">
+			<div class="header_inner">
+				<div class="site_logo">
+					<a target="_blank" class="logo_a">
+						<img src="images/logo.png"></a>
+
+				</div>
+				<div class="local_city start_city_box">
+					<div class="head_start_city" id="startCity">
+						<p class="sc_name"><span>绍兴站<i class="header_icon icon_arrow"></i></span></p>
+
+					</div>
+					<p class="grey_color">
+						<a href="#" target="_blank"><img src="images/local_branch.png" width="61" height="16"></a>
+					</p>
+				</div>
+
+				<div class="tn_search_box">
+					<div id="tnSearchBox" class="clearfix">
+						<form id="route_search" name="route_search" method="post" onsubmit="return false;" target="_self">
+							<input type="hidden" placeholder="青岛" name="q" id="q">
+							<input type="hidden" value="4" name="st" id="st">
+							<input type="hidden" value="search_complex" id="from_action">
+							<input id="letter" type="hidden" value="jx">
+							<div class="tn_s_select" id="typename">
+								<span style="">所有产品</span>
+								<div id="spic" class="spic"></div>
+							</div>
+							<p class="tn_s_input">
+								<input type="text" id="keyword-input" placeholder="绍兴" data="" data-cla="" autocomplete="off" style="color: rgb(153, 153, 153);font-size:12px;">
+							</p>
+							<div class="an_mo" liwithhan="搜索按钮">
+								<p class="tn_s_button"><button type="button" class="iconfont icon-sousuo" style="font-size: 30px;color: white;"></button></p>
+							</div>
+							<div id="check_route_hi"></div>
+							<div id="check_route_hi"></div>
+						</form>
+					</div>
+				</div>
+
+				<a class="search_advance" id="seniorSearch" onclick="_gaq.push(['_trackEvent', '首页_jx','点击','高级搜索_默认按钮__'])">高级搜索<i class="header_icon icon_arrow"></i></a>
+				<div class="site_contact" style="background-image: url(images/site_contact_bg.png); background-position: left bottom;">
+					<a class="headTuniuKefu" href="javascript:;"><img src="images/head_tel.png" style="width: 28px;"><span>欢迎使用<i>在线客服</i></span></a>
+					<span class="h_tel_icon"></span>
+					<p class="text" id="service_phone_head_text">24h客户服务电话<em class=""></em></p>
+					<p class="tel" id="service_phone_head_tel">4007-999-999</p>
+					<span class="h_mingxing_icon"></span>
+					<div class="service_phone_box" style="display: none;"><span id="service_phone_box_tel">国内：<i>4007-999-999</i><br>国际：<i>+0086-25-8685-9999</i></span>
+						<div class="arrow"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--首页head_nav-->
+		<div class="header-nav" style="font-size: 14px;">
+			<div class="contain">
+				<ul class="nav-list">
+					<li>
+						<a href="index.html">首页<span class="trig"></span></a>
+					</li>
+					<li>
+						<a href="#">自由行<span class="trig"></span></a>
+					</li>	
+					<li>
+						<a href="#">民宿<span class="trig"></span></a>
+					</li>
+					<li>
+						<a href="#">火车票<span class="trig"></span></a>
+					</li>
+					<li>
+						<a href="#">汽车票<span class="trig"></span></a>
+					</li>
+					<li>
+						<a href="dingzhiyou.html">定制游<span class="trig"></span></a>
+					</li>
+					<li class="selecte_active">
+						<a href="#">攻略<span class="trig"></span></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<!--blog-->
+		<div class="blog">
+			<div class="container1">
+				<div class="col-md-8 blog-left">
+					<div class="blog-info">
+						<h4><a href="singlepage.html">空中乡村游记</a></h4>
+						<p>Posted By
+							<a href="#">蠢迪迪迪迪迪</a> &nbsp;&nbsp; on 4月4日 , 2018 &nbsp;&nbsp;
+							<a href="#">评论 (10)</a>
+						</p>
+						<div class="blog-info-text">
+							<div class="blog-img">
+								<a href="singlepage.html"> <img src="images/img12.jpeg" class="img-responsive zoom-img" alt="" /></a>
+							</div>
+							<h5><a href="singlepage.html">在一个夏日的午后，行走在“空中乡村”，享受着须臾的宁静，在静与躁之间，寻找着只属于自己的平衡点...</a></h5>
+							<p class="snglp">乌石村，又称管头村、关头村，外界又称“空中乡村”，座落在浙江省磐安县尖山镇的高山台地上，以黑色玄武岩为墙体材料垒成的古民居，是浙江省内保存较为完好的古建筑之一。这些乌石房，冬暖夏凉，形成一道特别的风景。这屹立千年的石墙，讲述着岁月的沧桑……</p>
+							<a href="singlepage.html" class="btn btn-primary hvr-rectangle-in">Read More</a>
+						</div>
+					</div>
+					<div class="blog-info">
+						<h4><a href="singlepage.html">泽雅镇</a></h4>
+						<p>Posted By
+							<a href="#">傻迪迪迪迪迪</a> &nbsp;&nbsp; on 4月3日 , 2018 &nbsp;&nbsp;
+							<a href="#">评论 (10)</a>
+						</p>
+						<div class="blog-info-text">
+							<div class="blog-img">
+								<a href="singlepage.html"> <img src="images/img13.jpg" class="img-responsive zoom-img" alt="" /></a>
+							</div>
+							<h5><a href="singlepage.html">峡谷飞瀑风光，九龙瀑三折瀑布连成一幅百余米高的水幕，势如九龙喷水；鳄鱼潭嵌在石壁之中，水清见底,人称“天下第一珠”。</a></h5>
+							<p class="snglp">泽雅位于瓯海区西部的泽雅镇境内，俗称“西雁荡山”。此地原名“寨下”，泽雅是“寨下”温州话的译音，西雁附近还有一个泽雅水库。以群瀑、碧潭、幽峡、奇岩为特色，融朴野的山村风情为一体，有七瀑涧、金坑峡、高山角、珠岩、西山、龙溪、崎云、五凤等名胜。</p>
+							<a href="singlepage.html" class="btn btn-primary hvr-rectangle-in">Read More</a>
+						</div>
+					</div>
+					<div class="blog-info">
+						<h4><a href="singlepage.html">鄞江古镇</a></h4>
+						<p>Posted By
+							<a href="#">笨迪迪迪迪迪</a> &nbsp;&nbsp; on 4月2日 , 2018 &nbsp;&nbsp;
+							<a href="#">评论 (10)</a>
+						</p>
+						<div class="blog-info-text">
+							<div class="blog-img">
+								<a href="singlepage.html"> <img src="images/img14.jpg" class="img-responsive zoom-img" alt="" /></a>
+							</div>
+							<h5><a href="singlepage.html">难忘恬淡的水乡诗意：两年去了3次鄞江古镇</a></h5>
+							<p class="snglp">一直向往江南水乡的乡村生活。大学毕业后，去了很多地方工作，但最终还是选择留在了甬城。每逢周末，只要时间允许，我都喜欢到宁波的乡村走走看看。在宁波的三年时间里，我没有特别计算过究竟去了多少古镇村落，但不可否认，有些去过的地方，会很难忘，比如鄞江古镇。</p>
+							<a href="singlepage.html" class="btn btn-primary hvr-rectangle-in">Read More</a>
+						</div>
+					</div>
+					
+				</div>
+				<div class="col-md-4 single-page-right">
+					<div class="recent-posts">
+						<h4>最近发表</h4>
+						<div class="recent-posts-info">
+							<div class="posts-left sngl-img">
+								<a href="singlepage.html"> <img src="images/img18.jpg" class="img-responsive zoom-img" alt="" /> </a>
+							</div>
+							<div class="posts-right">
+								<lable>3月5, 2018</lable>
+								<h5><a href="singlepage.html">霞山村</a></h5>
+								<p>古街老巷阡陌纵横，高跷竹马玩起来.浙西地区徽派建筑数量最多、保存最完整的建筑群之一。</p>
+								<a href="singlepage.html" class="btn btn-primary hvr-rectangle-in">Read More</a>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+						<div class="recent-posts-info">
+							<div class="posts-left sngl-img">
+								<a href="singlepage.html"> <img src="images/img19.jpg" class="img-responsive zoom-img" alt="" /></a>
+							</div>
+							<div class="posts-right">
+								<lable>MARCH 1, 2015</lable>
+								<h5><a href="singlepage.html">临安指南村</a></h5>
+								<p>徒步五彩斑斓的山野 ，走一条最美秋色线路.最美的江南村落，村里弯曲的山路，低缓的山坡。</p>
+								<a href="singlepage.html" class="btn btn-primary hvr-rectangle-in">Read More</a>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="comments">
+						<h4>最近评论</h4>
+						<div class="comments-info">
+							<div class="cmnt-icon-left">
+								<a href="singlepage.html"><img src="images/icon1.png" alt="" /></a>
+							</div>
+							<div class="cmnt-icon-right">
+								<p>4月2, 2018</p>
+								<p>
+									<a href="singlepage.html">Effort</a>
+								</p>
+							</div>
+							<div class="clearfix"> </div>
+							<p class="cmmnt">人生该有个不一样的旅行，一生一次318国道川藏线，看不一样的风景，遇见不一样的人，还有未知的自己</p>
+						</div>
+						<div class="comments-info cmnts-mddl">
+							<div class="cmnt-icon-left">
+								<a href="singlepage.html"><img src="images/icon1.png" alt="" /></a>
+							</div>
+							<div class="cmnt-icon-right">
+								<p>4月1, 2018</p>
+								<p>
+									<a href="singlepage.html">会飞的迪</a>
+								</p>
+							</div>
+							<div class="clearfix"> </div>
+							<p class="cmmnt">趁着最好的时光，带着梦想，去旅游吧</p>
+						</div>
+						<div class="comments-info">
+							<div class="cmnt-icon-left">
+								<a href="singlepage.html"><img src="images/icon1.png" alt="" /></a>
+							</div>
+							<div class="cmnt-icon-right">
+								<p>3月30, 2018</p>
+								<p>
+									<a href="singlepage.html">娃哈哈哈</a>
+								</p>
+							</div>
+							<div class="clearfix"> </div>
+							<p class="cmmnt">有人说，如果你没有信仰，不如就把旅行当做你的信仰，这样你一生都走在朝圣的路上</p>
+						</div>
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+		<!--//blog-->
+		
+
+		<script type="text/javascript">
+			$(document).ready(function() {
+
+				$().UItoTop({
+					easingType: 'easeOutQuart'
+				});
+
+			});
+		</script>
+		<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+		<script src="js/bootstrap.js"></script>
+		<script type="text/javascript" src="js/jquery-1.4.4.min.js" ></script>
+			<script type="text/javascript" src="js/castapp.js" ></script>
+			<!--<script type="text/javascript" src="js/bootstrap.js" ></script>-->
+			<script type="text/javascript" src="js/jquery.XYTipsWindow.min.2.8.js" ></script>
+			<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>-->
+			<link rel="stylesheet" type="text/css" href="css/box_style.css"/>
+			<script>
+				$(".nav-list li").mousemove(function() {
+					$(this).addClass("header-nav_active");
+					$(this).siblings().removeClass("header-nav_active");
+				})
+				$(".nav-list li").click(function() {
+					$(this).addClass("selecte_active");
+					$(this).siblings().removeClass("selecte_active");
+				})
+				
+				 var user = localStorage.getItem('user');
+			 //alert(user);
+			 var user_right = document.getElementById('user_right');
+			 if(user == '' || user == null){
+			 	user_right.innerHTML += '<a id="user_login" style="cursor: pointer;">登录</a>';
+			 }else{
+			 	user_right.innerHTML += '<span>欢迎您,' + user   +'  </span>' 
+			 						 +'<a id="user_exit" style="cursor: pointer;">退出</a>';
+			 }
+				$("#user_login").click(function() {
+//					alert(1)
+					$.XYTipsWindow({
+						___title: "浙江乡村旅游网登录",
+						___content: "iframe:login.html",
+						___width: "460",
+						___height: "300",
+						___showbg: true,
+						___drag: "___boxTitle"
+
+					});
+				});
+				$("#user_exit").click(function() {
+					localStorage.setItem('user', '');
+					user_right.innerHTML = '<a id="user_login" style="cursor: pointer;">登录</a>';
+					alert('退出成功');
+					window.location.reload();
+				});
+			</script>
+	</body>
+
+</html>

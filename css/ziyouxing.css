@@ -1,0 +1,96 @@
+div{
+	display: block;
+}
+.tag-filter {
+    padding: 10px 20px;
+    /*border: #ddd solid 1px;*/
+    border-radius: 2px;
+    margin: 0 0 30px;
+    margin-left: 20%;
+}
+.tag-filter ul {
+    margin: 0;
+    overflow: hidden;
+}
+.tag-filter li {
+    float: left;
+    list-style: none;
+    margin-right: 10px;
+}
+
+
+.tag-filter li a:hover, .tag-filter li .selected {
+    background: #2b4d7f;
+    color: #fff;
+    border-radius: 3px;
+}
+.tag-filter li a {
+    cursor: pointer;
+    padding: 4px 10px;
+    float: left;
+}
+.tag-filter li .selected {
+    background: #ca1830;
+}
+.tag-filter-container {
+	margin-left: 20%;
+    width: 960px;
+}
+.isotope-item {
+    z-index: 2;
+}
+.list{
+	display: flex;
+}
+
+.one-fourth {
+    width: 220px;
+}
+.one-half, .one-third, .two-third, .one-fourth {
+    float: left;
+    margin-right: 20px;
+    list-style: none;
+}
+.blog .post-item {
+    position: relative;
+}
+
+.post-item {
+    border: #ddd solid 1px;
+    border-radius: 2px;
+    margin-bottom: 30px;
+    background: #fff;
+}
+.post-item .image-place {
+    overflow: hidden;
+}
+.post-item .post-content {
+    padding: 10px;
+    height: 80px;
+}
+.post-item .post-title {
+    font-size: 14px;
+    line-height: 1em;
+    margin: 0 0 10px;
+}
+a:link, a:visited {
+    color: #006db8;
+}
+a {
+    text-decoration: none;
+}
+.post-item .post-meta {
+    background: #f7f7f7;
+    border-top: #ddd solid 1px;
+    padding: 10px;
+    font-size: 11px;
+    line-height: 1em;
+    color: #999;
+    height: 1em;
+}
+.post-item .post-meta .read-more {
+    float: right;
+    border-left: #ddd solid 1px;
+    padding: 10px;
+    margin: -10px -10px 0 10px;
+}

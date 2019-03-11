@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+				<link rel="stylesheet" type="text/css" href="css/ato.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/gonglue.css" />
+		<link rel="stylesheet" type="text/css" href="css/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="css/flexslider.css"/>
+		<link rel="stylesheet" type="text/css" href="css/ziyouxing_detail.css" />
+		<link rel="stylesheet" href="css/responsive.css" />
+		<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.8.24.custom.min.js"></script>
+<script type="text/javascript" src="js/jquery.mobile.customized.min.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script> 
+<script type="text/javascript" src="js/camera.min.js"></script> 
+<script type="text/javascript" src="js/jquery.isotope.min.js"></script>
+<script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+<script type="text/javascript" src="js/selectnav.min.js"></script>
+<script type="text/javascript" src="js/theme.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+		<body style="background: url(images/allbac.jpg);background-attachment:fixed;background-repeat:no-repeat;">
+		<!--顶部-->
+		<div class="header_top">
+			<ul class="index_top_nav" id="user_login_info">
+				<div class="login_menu clearfix">
+					<li>
+						<div id="user_right">
+							<!--<a id="user_login" style="cursor: pointer;">登录</a>-->
+						</div>
+					</li>
+					<li>
+						<a target="_blank"><img src="images/registgift.gif" alt="会员注册有礼" style="height: 22px;line-height: 22px; vertical-align: middle;"></a>
+					</li>
+				</div>
+			</ul>
+			<ul class="index_top_nav nav_right" id="index_top_right">
+				<li class="nav_item item_order">
+					<a target="_blank" rel="nofollow" style="color: #ff8800;">企业频道</a>
+				</li>
+				<li class="nav_item item_order" id="club">
+					<a target="_blank" style="color: #ff8800;">会员俱乐部</a>
+				</li>
+				<li class="nav_item item_order is_order has_arrow has_dropdown">
+					我的订单
+					<i class="header_icon icon_arrow"></i>
+				</li>
+				<li class="nav_item item_siteMap has_arrow has_dropdown">
+					<a>网站地图</a>
+					<i class="header_icon icon_arrow"></i>
+				</li>
+				<li class="nav_item item_weibo">
+					<a class="header_icon icon_weibo vm" rel="nofollow" target="_blank"></a>
+				</li>
+				<li class="nav_item item_qrCode has_dropdown">
+					<i class="header_icon icon_phone" id="isPcOrMobile"><a  class="sitenav_mobile"  target="_blank" rel="nofollow"></a></i>
+				</li>
+				<li class="nav_item item_weixin has_dropdown">
+					<a class="header_icon icon_weixin vm" rel="nofollow" href="#"></a>
+				</li>
+				<li class="nav_item item_mailbox">
+					<a class="header_icon icon_mailbox vm" target="_blank"></a>
+				</li>
+
+			</ul>
+		</div>
+
+		<!--顶部下方-->
+
+		<div class="header_search" style="width: 70%;margin-left: 15%;">
+			<div class="header_inner">
+				<div class="site_logo">
+					<a target="_blank" class="logo_a">
+						<img src="images/logo.png"></a>
+
+				</div>
+				<div class="local_city start_city_box">
+					<div class="head_start_city" id="startCity">
+						<p class="sc_name"><span>绍兴站<i class="header_icon icon_arrow"></i></span></p>
+
+					</div>
+					<p class="grey_color">
+						<a href="#" target="_blank"><img src="images/local_branch.png" width="61" height="16"></a>
+					</p>
+				</div>
+
+				<div class="tn_search_box">
+					<div id="tnSearchBox" class="clearfix">
+						<form id="route_search" name="route_search" method="post" onsubmit="return false;" target="_self">
+							<input type="hidden" placeholder="青岛" name="q" id="q">
+							<input type="hidden" value="4" name="st" id="st">
+							<input type="hidden" value="search_complex" id="from_action">
+							<input id="letter" type="hidden" value="jx">
+							<div class="tn_s_select" id="typename">
+								<span style="">所有产品</span>
+								<div id="spic" class="spic"></div>
+							</div>
+							<p class="tn_s_input">
+								<input type="text" id="keyword-input" placeholder="绍兴" data="" data-cla="" autocomplete="off" style="color: rgb(153, 153, 153);font-size:12px;">
+							</p>
+							<div class="an_mo" liwithhan="搜索按钮">
+								<p class="tn_s_button"><button type="button" class="iconfont icon-sousuo" style="font-size: 30px;color: white;"></button></p>
+							</div>
+							<div id="check_route_hi"></div>
+							<div id="check_route_hi"></div>
+						</form>
+					</div>
+				</div>
+
+				<a class="search_advance" id="seniorSearch" onclick="_gaq.push(['_trackEvent', '首页_jx','点击','高级搜索_默认按钮__'])">高级搜索<i class="header_icon icon_arrow"></i></a>
+				<div class="site_contact" style="background-image: url(images/site_contact_bg.png); background-position: left bottom;">
+					<a class="headTuniuKefu" href="javascript:;"><img src="images/head_tel.png" style="width: 28px;"><span>欢迎使用<i>在线客服</i></span></a>
+					<span class="h_tel_icon"></span>
+					<p class="text" id="service_phone_head_text">24h客户服务电话<em class=""></em></p>
+					<p class="tel" id="service_phone_head_tel">4007-999-999</p>
+					<span class="h_mingxing_icon"></span>
+					<div class="service_phone_box" style="display: none;"><span id="service_phone_box_tel">国内：<i>4007-999-999</i><br>国际：<i>+0086-25-8685-9999</i></span>
+						<div class="arrow"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--首页head_nav-->
+		<div class="header-nav" style="font-size: 14px;">
+			<div class="contain">
+				<ul class="nav-list">
+					<li>
+						<a href="index.html">首页<span class="trig"></span></a>
+					</li>
+					<li class="selecte_active">
+						<a href="ziyouxing.html">自由行<span class="trig"></span></a>
+					</li>
+					
+					<li ">
+						<a href="hotel.html">民宿<span class="trig"></span></a>
+					</li>
+					<li>
+						<a href="#">火车票<span class="trig"></span></a>
+					</li>
+					<li>
+						<a href="#">汽车票<span class="trig"></span></a>
+					</li>
+					<li>
+						<a href="dingzhiyou.html">定制游<span class="trig"></span></a>
+					</li>
+					<li>
+						<a href="gonglue.html" trig ">攻略</span></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		
+		<!--内容-->
+		<div id="container">
+			<div class="post-item post-thumb-hor">
+				<div class="image-place">
+					<img src="images/detail01.jpg" alt="image">
+				</div>
+				<div class="post-content">
+					<h2 class="post-title">豪华芙蓉镇三日游</h2>
+					<p class="post-excerpt">芙蓉镇，位于乐清市境东北部，三面环山，一面临海，属半山区。其地形由东南向西北倾斜，白龙山脉横亘于前，雁荡山支脉诸山杂陈于后，境内有长短七条溪流经过，其中芙蓉、黄金两溪贯穿中部，东流注入清江。据明永乐《乐清县志·叙山》载：芙蓉山“去县东六十里，在山门乡，其山西南上三峰，有岩石，并高三、四尺，森然如美蓉，红赤相映，因以名村。”</p>
+					<ul class="post-content-detail">
+						<li>
+							<span>评分</span>
+							<strong class="sprite-stars star4">4 Stars</strong>
+						</li>
+						<li>
+							
+							<strong class="price">$ 779</strong>
+							<span>起</span>
+						</li>
+					</ul>
+				</div>
+				<div class="post-meta">
+					<span class="icon-place">蠢迪迪迪迪</span>
+				</div>
+			</div>
+			
+			<div class="one-third">
+				
+				
+				<div id="searchmodule">
+					<ul class="tab-control">
+						<li class="ui-tabs-selected"><a href="#hotel-search">找酒店</a></li>
+					</ul>					
+					<div id="hotel-search" class="tab-content">
+						<form action="#">
+							<div class="field">
+								<label for="hotel-to">城市:</label>
+								<input type="text" id="hotel-to" class="input-text" placeholder="请输入城市" autocomplete="off">
+							</div>
+							<div class="field half">
+								<label for="hotel-depart">入住日期:</label>
+								<input type="text" id="hotel-depart" class="input-text input-cal hasDatepicker" placeholder="2012-10-01" autocomplete="off">
+							</div>
+							<div class="field half even">
+								<label for="hotel-return">退房:</label>
+								<input type="text" id="hotel-return" class="input-text input-cal hasDatepicker" placeholder="2012-10-01" autocomplete="off">
+							</div>
+							<div class="field half">
+								<label for="hotel-class">等级:</label>
+								<input type="text" id="hotel-class" class="input-text" autocomplete="off">
+							</div>
+							<div class="field half even">
+								<label for="hotel-room">人数:</label>
+								<select id="hotel-room">
+									<option>1</option>
+								</select>
+							</div>
+							<button type="submit" class="submit">Search</button>
+							<br class="clear">
+						</form>
+					</div>
+					<!--hotel search -->
+				</div>
+				<!--searchmodule -->				
+				
+				<div class="widget similiar-place">
+					<div class="h3 widget-title">
+						其他酒店					</div>
+					<div class="widget-content">
+						<ul>
+							<li class="link-thumb">
+								<div class="link-image">
+									<a href="#"><img style="width: 50px;height: 50px;" src="images/wuzhen2.jpg" alt="image"></a>	
+								</div>
+								<div class="link-text">
+									<h5><a href="#">我行我宿主题酒店</a></h5>
+									<p>
+										<span class="place">Rushmore, 舟山</span><br>
+										<strong class="price">30$</strong> <span class="sprite-stars star4">4 stars</span>
+									</p>
+								</div>
+							</li>
+							<li class="link-thumb">
+								<div class="link-image">
+									<a href="#"><img style="width: 50px;height: 50px;" src="images/shilin1.jpg" alt="image"></a>
+								</div>
+								<div class="link-text">
+									<h5><a href="#">果朴民宿</a></h5>
+									<p>
+										<span class="place">Rome, 宁波</span><br>
+										<strong class="price">30$</strong> <span class="sprite-stars star4">4 stars</span>
+									</p>
+								</div>
+							</li>
+							
+						</ul>
+					</div>
+				</div>
+				<!--widget -->
+			</div>
+			
+			<div class="two-third last">
+				
+				<div class="module-box">
+					
+					<div class="flexslider">
+						
+					<div class="flex-viewport" style="overflow: hidden; position: relative;"><ul class="slides" style="width: 1200%; transition-duration: 0.6s; transform: translate3d(-289px, 0px, 0px);">
+							<li style="width: 144.5px; float: left; display: block;"><a href=""><img src="images/detail01.jpg" alt="image"></a></li>
+							<li style="width: 144.5px; float: left; display: block;"><a href=""><img src="images/detail02.jpg" alt="image"></a></li>
+							<li style="width: 144.5px; float: left; display: block;"><a href=""><img src="images/detail03.jpg" alt="image"></a></li>
+							<li style="width: 144.5px; float: left; display: block;"><a href=""><img src="images/detail04.jpg" alt="image"></a></li>
+							<li style="width: 144.5px; float: left; display: block;"><a href=""><img src="images/detail05.jpg" alt="image"></a></li>
+							<li style="width: 144.5px; float: left; display: block;"><a href=""><img src="images/detail06.jpg" alt="image"></a></li>
+						</ul></div><ul class="flex-direction-nav"><li><a class="flex-prev" href="#">Previous</a></li><li><a class="flex-next" href="#">Next</a></li></ul></div>
+										
+					<h3>芙蓉镇</h3>
+					<p><img class="left" src="images/detail06.jpg" alt="image">芙蓉名美景更美，域内山清水秀，被誉为雁荡“十八古刹”之一的本觉禅寺，已有一千二百余年的历史， “芙蓉夕照”、龙潭坑、筋竹涧、芙蓉池、万缘桥诸景点名闻遐迩；芙蓉溪的溪水，冬日里烟雾弥漫，温暖如汤，夏日里清凉惬意；溪流两岸，林木苍翠，花卉丛生，使人神旷心怡。芙蓉物产丰富，尤以芋头、红萝卜、香鱼、麦饼、麦油煎最为著名，其中的麦油煎，皮薄香软，最为驰名</p>
+					
+					<br class="clear">
+					
+					<div id="gmap" class="widget side-map"></div>
+					
+					<div class="one-half">
+						<h3>概述</h3>
+						<p>芙蓉镇自古山水钟秀，和雁荡山一起素有“山以鸟名，村以花名”之称。境内景点有芙蓉池、梅雨潭、雁荡山西大门、筋竹涧、万缘桥、雁荡十八古刹之一的本觉寺遗址、永乐人民抗日游击自卫总队纪念馆等，集镇上至今仍有二、七日的集市传统,有一定的集聚能力。</p>
+					</div>
+					<!--one-third -->
+					
+					<div class="one-half last">
+						<h3>地理环境</h3>
+						<p>芙蓉镇三面环山，一面临海，属半山区。其地形由西北向东南倾斜，白龙山脉横亘于前，雁荡山支脉诸山杂陈于后，境内有长短七条溪流经过，其中芙蓉、黄金两溪贯穿中部，东流注入清江。</p>
+					</div>
+					<!--one-third -->
+					
+					<br class="clear">
+				</div>
+				<!--module-box -->
+			</div>
+		</div>
+		
+		
+		<script type="text/javascript" src="js/jquery.js" ></script>
+		<script>
+			$(".nav-list li").mousemove(function() {
+					$(this).addClass("header-nav_active");
+					$(this).siblings().removeClass("header-nav_active");
+				})
+				$(".nav-list li").click(function() {
+					$(this).addClass("selecte_active");
+					$(this).siblings().removeClass("selecte_active");
+				});
+			var user = localStorage.getItem('user');
+			//alert(user);
+			var user_right = document.getElementById('user_right');
+			if(user == '' || user == null) {
+				user_right.innerHTML += '<a id="user_login " style="cursor: pointer; ">登录</a>';
+			} else {
+				user_right.innerHTML += '<span>欢迎您,' + user + '  </span>' +
+					'<a id="user_exit " style="cursor: pointer; ">退出</a>';
+			}
+			$("#user_login ").click(function() {
+				//					alert(1)
+				$.XYTipsWindow({
+					___title: "浙江乡村旅游网登录 ",
+					___content: "iframe:login.html ",
+					___width: "460 ",
+					___height: "300 ",
+					___showbg: true,
+					___drag: "___boxTitle "
+
+				});
+			});
+			$("#user_exit ").click(function() {
+				localStorage.setItem('user', '');
+				user_right.innerHTML = '<a id="user_login " style="cursor: pointer; ">登录</a>';
+				alert('退出成功');
+				window.location.reload();
+			});
+		</script>
+	</body>
+</html>

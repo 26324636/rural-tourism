@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/ato.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/iconfont.css" />
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/web.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel='stylesheet' href='css/zzsc.css' />
+<script type="text/javascript" src="js/1141.js"></script>
+<script src='js/zzsc.js' type='text/javascript'></script>
+		<link rel="stylesheet" type="text/css" href="css/demo.css">
+		<script type="text/javascript" src="js/jquery.XYTipsWindow.min.2.8.js"></script>
+		<!--<link rel="stylesheet" type="text/css" href="css/login.css"/>-->
+	</head>
+
+	<body style="background: url(images/allbac.jpg);background-attachment:fixed;background-repeat:no-repeat;">
+		<!--顶部-->
+		<div class="header_top">
+			<ul class="index_top_nav" id="user_login_info">
+				<div class="login_menu clearfix">
+					<li>
+						<div id="user_right">
+							<!--<a id="user_login" style="cursor: pointer;">登录</a>-->
+						</div>
+					</li>
+						<li>
+							<a target="_blank"><img src="images/registgift.gif" alt="会员注册有礼" style="height: 22px;line-height: 22px; vertical-align: middle;"></a>
+						</li>
+				</div>
+			</ul>
+			<ul class="index_top_nav nav_right" id="index_top_right">
+				<li class="nav_item item_order">
+					<a target="_blank" rel="nofollow" style="color: #ff8800;">企业频道</a>
+				</li>
+				<li class="nav_item item_order" id="club">
+					<a target="_blank" style="color: #ff8800;">会员俱乐部</a>
+				</li>
+				<li class="nav_item item_order is_order has_arrow has_dropdown">
+					我的订单
+					<i class="header_icon icon_arrow"></i>
+				</li>
+				<li class="nav_item item_siteMap has_arrow has_dropdown">
+					<a>网站地图</a>
+					<i class="header_icon icon_arrow"></i>
+				</li>
+				<li class="nav_item item_weibo">
+					<a class="header_icon icon_weibo vm" rel="nofollow" target="_blank"></a>
+				</li>
+				<li class="nav_item item_qrCode has_dropdown">
+					<i class="header_icon icon_phone" id="isPcOrMobile"><a  class="sitenav_mobile"  target="_blank" rel="nofollow"></a></i>
+				</li>
+				<li class="nav_item item_weixin has_dropdown">
+					<a class="header_icon icon_weixin vm" rel="nofollow" href="#"></a>
+				</li>
+				<li class="nav_item item_mailbox">
+					<a class="header_icon icon_mailbox vm" target="_blank"></a>
+				</li>
+
+			</ul>
+		</div>
+
+		<!--顶部下方-->
+
+		<div class="header_search" style="width: 70%;margin-left: 15%;">
+			<div class="header_inner">
+				<div class="site_logo">
+					<a target="_blank" class="logo_a">
+						<img src="images/logo.png"></a>
+
+				</div>
+				<div class="local_city start_city_box">
+					<div class="head_start_city" id="startCity">
+						<p class="sc_name"><span>绍兴站<i class="header_icon icon_arrow"></i></span></p>
+
+					</div>
+					<p class="grey_color">
+						<a href="#" target="_blank"><img src="images/local_branch.png" width="61" height="16"></a>
+					</p>
+				</div>
+
+				<div class="tn_search_box">
+					<div id="tnSearchBox" class="clearfix">
+						<form id="route_search" name="route_search" method="post" onsubmit="return false;"  target="_self">
+							<input type="hidden" placeholder="青岛" name="q" id="q">
+							<input type="hidden" value="4" name="st" id="st">
+							<input type="hidden" value="search_complex" id="from_action">
+							<input id="letter" type="hidden" value="jx">
+							<div class="tn_s_select" id="typename">
+								<span style="">所有产品</span>
+								<div id="spic" class="spic"></div>
+							</div>
+							<p class="tn_s_input">
+								<input type="text" id="keyword-input" placeholder="绍兴" data="" data-cla="" autocomplete="off" style="color: rgb(153, 153, 153);font-size:12px;">
+							</p>
+							<div class="an_mo" liwithhan="搜索按钮">
+								<p class="tn_s_button"><button type="button" class="iconfont icon-sousuo" style="font-size: 30px;color: white;"></button></p>
+							</div>
+							<div id="check_route_hi"></div>
+							<div id="check_route_hi"></div>
+						</form>
+					</div>
+				</div>
+
+				<a class="search_advance" id="seniorSearch" onclick="_gaq.push(['_trackEvent', '首页_jx','点击','高级搜索_默认按钮__'])">高级搜索<i class="header_icon icon_arrow"></i></a>
+				<div class="site_contact" style="background-image: url(images/site_contact_bg.png); background-position: left bottom;">
+					<a class="headTuniuKefu" href="javascript:;"><img src="images/head_tel.png" style="width: 28px;"><span>欢迎使用<i>在线客服</i></span></a>
+					<span class="h_tel_icon"></span>
+					<p class="text" id="service_phone_head_text">24h客户服务电话<em class=""></em></p>
+					<p class="tel" id="service_phone_head_tel">4007-999-999</p>
+					<span class="h_mingxing_icon"></span>
+					<div class="service_phone_box" style="display: none;"><span id="service_phone_box_tel">国内：<i>4007-999-999</i><br>国际：<i>+0086-25-8685-9999</i></span>
+						<div class="arrow"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--首页head_nav-->
+		<div class="header-nav" style="font-size: 14px;">
+			<div class="contain">
+				<ul class="nav-list">
+					<li class="selecte_active">
+						<a href="#">首页<span class="trig"></span></a>
+					</li>
+					<li>
+						<a href="ziyouxing.html">自由行<span class="trig"></span></a>
+					</li>
+					<li>
+						<a href="hotel.html">民宿<span class="trig"></span></a>
+					</li>
+					<li>
+						<a href="#">火车票<span class="trig"></span></a>
+					</li>
+					<li>
+						<a href="#">汽车票<span class="trig"></span></a>
+					</li>
+					<li>
+						<a href="dingzhiyou.html">定制游<span class="trig"></span></a>
+					</li>
+					<li>
+						<a href="gonglue.html">攻略<span class="trig"></span></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<!--轮播-->
+		<div id="bd" class="gclearfix">
+
+<div class="slide" id="Slide">
+
+	<div class="slide-hd">
+		<h2 class="title">
+            <a>薰衣草之香</a>
+            <a style="display:none" >秋天里的童话世界</a>
+            <a style="display:none">冬日里的明媚阳光</a>
+            <a style="display:none">给心灵一个休憩地</a>
+		</h2>
+        
+		<div class="thumb" id="slidePagination">
+			<ul class="gclearfix">
+                <li class="selected"><a ><img src="images/thumb/01.jpg" alt="站长素材" /><span class="mask"></span></a></li>
+                <li ><a ><img src="images/thumb/02.jpg" alt="站长素材站长素材" /><span class="mask"></span></a></li>
+                <li ><a ><img src="images/thumb/03.jpg" alt="" /><span class="mask"></span></a></li>
+                <li><a ><img src="images/thumb/04.jpg" alt="站长素材" /><span class="mask"></span></a></li>
+			</ul>
+		</div>
+        
+		<div class="slide-hd-bg"></div>
+	</div>
+    
+<div class="slide-bd" id="slideWrapper">
+<div class="pic-list">
+<a  class="J-pic-node"><img src="images/01.jpg" lazysrc="images/01.jpg" alt="站长素材" /></a>
+<a  class="J-pic-node"><img src="images/02.jpg"  lazysrc="images/02.jpg" alt="站长素材" /></a>
+<a  class="J-pic-node"><img src="images/03.jpg"  lazysrc="images/03.jpg" alt="站长素材" /></a>
+<a  class="J-pic-node"><img src="images/04.jpg" lazysrc="images/04.jpg" alt="站长素材" /></a>
+</div>
+</div>
+    
+	<div class="slide-btn">
+		<a href="" class="prev">上一页
+			<!--[if IE 6]>
+				<div>
+					<span class="arrow"></span>
+					<span class="mask"></span>
+				</div>
+			<![endif]-->
+		</a>
+        
+		<a href="" class="next">下一页
+			<!--[if IE 6]>
+				<div>
+					<span class="arrow"></span>
+					<span class="mask"></span>
+				</div>
+			<![endif]-->
+		</a>
+	</div>
+    </div>
+			<!--选择-->
+			<div class="index_buttom" style="display: flex;">
+
+				<div class="product_sort fl" style="margin-left:14.6% ;font-size: 12px;">
+					<div class="hd">旅游产品导航</div>
+					<div class="bd">
+						<div class="item">
+							<div class="title one">
+								<a href="#"><i></i>自由行</a>
+							</div>
+							<div class="list">
+								<a href="#">杭州</a>
+								<a href="#">温州</a>
+								<a href="#">台州</a>
+								<a href="#">赏花</a>
+								<a href="#">踏青</a>
+							</div>
+							<div class="arrow">&gt;</div>
+							<div class="line"></div>
+							<div class="subitem">
+								<div class="inner">
+									<div class="tit tit1">
+										<div class="name">地域区划</div>
+										<ul>
+											<li>
+												<a href="#">杭州</a>
+											</li>
+											<li>
+												<a href="#">宁波</a>
+											</li>
+											<li>
+												<a href="#">温州</a>
+											</li>
+											<li>
+												<a href="#">嘉兴</a>
+											</li>
+											<li>
+												<a href="#">湖州</a>
+											</li>
+											<li>
+												<a href="#">绍兴</a>
+											</li>
+											<li>
+												<a href="#">丽水</a>
+											</li>
+										</ul>
+										<ul>
+											<li>
+												<a href="#">金华</a>
+											</li>
+											<li>
+												<a href="#">衢州</a>
+											</li>
+											<li>
+												<a href="#">舟山</a>
+											</li>
+											<li>
+												<a href="#">台州</a>
+											</li>
+										</ul>
+									</div>
+									<div class="tit">
+										<div class="name">特色主题</div>
+										<ul>
+											<li>
+												<a href="#">古建筑</a>
+											</li>
+											<li>
+												<a href="#">赏花</a>
+											</li>
+											<li>
+												<a href="#">滩涂</a>
+											</li>
+											<li>
+												<a href="#">踏青</a>
+											</li>
+											<li>
+												<a href="#">怪石</a>
+											</li>
+											<li>
+												<a href="#">绿竹</a>
+											</li>
+											
+											</ul>
+										<ul>
+											<li>
+												<a href="#">传统工艺</a>
+											</li>
+											<li>
+												<a href="#">人文历史</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="item">
+							<div class="title two">
+								<a href="#"><i></i>民宿</a>
+							</div>
+							<div class="list">
+								<a href="#">杭州</a>
+								<a href="#">温州</a>
+								<a href="#">台州</a>
+								<a href="#">赏花</a>
+								<a href="#">踏青</a>
+							</div>
+							<div class="arrow">&gt;</div>
+							<div class="line"></div>
+							<div class="subitem">
+								<div class="inner">
+									<div class="tit tit1">
+										<div class="name">地域区划</div>
+										<ul>
+											<li>
+												<a href="#">杭州</a>
+											</li>
+											<li>
+												<a href="#">宁波</a>
+											</li>
+											<li>
+												<a href="#">温州</a>
+											</li>
+											<li>
+												<a href="#">嘉兴</a>
+											</li>
+											<li>
+												<a href="#">湖州</a>
+											</li>
+											<li>
+												<a href="#">绍兴</a>
+											</li>
+											<li>
+												<a href="#">丽水</a>
+											</li>
+										</ul>
+										<ul>
+											<li>
+												<a href="#">金华</a>
+											</li>
+											<li>
+												<a href="#">衢州</a>
+											</li>
+											<li>
+												<a href="#">舟山</a>
+											</li>
+											<li>
+												<a href="#">台州</a>
+											</li>
+										</ul>
+									</div>
+									<div class="tit">
+										<div class="name">特色主题</div>
+										<ul>
+											<li>
+												<a href="#">古建筑</a>
+											</li>
+											<li>
+												<a href="#">赏花</a>
+											</li>
+											<li>
+												<a href="#">滩涂</a>
+											</li>
+											<li>
+												<a href="#">踏青</a>
+											</li>
+											<li>
+												<a href="#">怪石</a>
+											</li>
+											<li>
+												<a href="#">绿竹</a>
+											</li>
+											
+											</ul>
+										<ul>
+											<li>
+												<a href="#">传统工艺</a>
+											</li>
+											<li>
+												<a href="#">人文历史</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="item">
+							<div class="title four">
+								<a href="#"><i></i>火车 汽车</a>
+							</div>
+							<div class="list">
+								<a href="#">杭州</a>
+								<a href="#">温州</a>
+								<a href="#">台州</a>
+								<a href="#">赏花</a>
+								<a href="#">踏青</a>
+							</div>
+							<div class="arrow">&gt;</div>
+							<div class="line"></div>
+							<div class="subitem">
+								<div class="inner">
+									<div class="tit tit1">
+										<div class="inner_top">
+											<div class="inner_top_nav inner_top_nav_active">
+												火车票
+												<div class="inner_top_bo inner_top_bo_active"></div>
+											</div>
+											<div class="inner_top_nav">
+												汽车票
+												<div class="inner_top_bo"></div>
+											</div>
+										</div>
+										<div class="inner_bottom" style="display: block;">
+											<div class="inner_b1">
+												<div><input checked type="radio" />国内</div>
+												<div>仅搜索 高铁/动车</div>
+											</div>
+											<div class="inner_b2">
+												<input placeholder="出发站|请选择出发站" />
+												<div class="inner_jiantou">---></div>
+												<input placeholder="到达站|请选择到达站" />
+											</div>
+											<div class="inner_b3">
+												<input placeholder="出发时间|请选择出发时间" />
+												<div class="inner_btn">搜索</div>
+											</div>
+										</div>
+
+										<div class="inner_bottom" style="display: none;">
+											<div class="inner_b2">
+												<input placeholder="出发站|请选择出发站" />
+												<div class="inner_jiantou">---></div>
+												<input placeholder="到达站|请选择到达站" />
+											</div>
+											<div class="inner_b3">
+												<input placeholder="出发时间|请选择出发时间" />
+												<div class="inner_btn">搜索</div>
+											</div>
+										</div>
+
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="item">
+							<div class="title three ">
+								<a href="#"><i></i>定制游</a>
+							</div>
+							<div class="list">
+								<a href="#">杭州</a>
+								<a href="#">温州</a>
+								<a href="#">台州</a>
+								<a href="#">赏花</a>
+								<a href="#">踏青</a>
+							</div>
+							<div class="arrow">&gt;</div>
+							<div class="line"></div>
+							<div class="subitem">
+								<div class="inner">
+									<div class="tit tit1">
+										<div class="name">地域区划</div>
+										<ul>
+											<li>
+												<a href="#">杭州</a>
+											</li>
+											<li>
+												<a href="#">宁波</a>
+											</li>
+											<li>
+												<a href="#">温州</a>
+											</li>
+											<li>
+												<a href="#">嘉兴</a>
+											</li>
+											<li>
+												<a href="#">湖州</a>
+											</li>
+											<li>
+												<a href="#">绍兴</a>
+											</li>
+											<li>
+												<a href="#">丽水</a>
+											</li>
+										</ul>
+										<ul>
+											<li>
+												<a href="#">金华</a>
+											</li>
+											<li>
+												<a href="#">衢州</a>
+											</li>
+											<li>
+												<a href="#">舟山</a>
+											</li>
+											<li>
+												<a href="#">台州</a>
+											</li>
+										</ul>
+									</div>
+									<div class="tit">
+										<div class="name">特色主题</div>
+										<ul>
+											<li>
+												<a href="#">古建筑</a>
+											</li>
+											<li>
+												<a href="#">赏花</a>
+											</li>
+											<li>
+												<a href="#">滩涂</a>
+											</li>
+											<li>
+												<a href="#">踏青</a>
+											</li>
+											<li>
+												<a href="#">怪石</a>
+											</li>
+											<li>
+												<a href="#">绿竹</a>
+											</li>
+											
+											</ul>
+										<ul>
+											<li>
+												<a href="#">传统工艺</a>
+											</li>
+											<li>
+												<a href="#">人文历史</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="item">
+							<div class="title five">
+								<a href="#"><i></i>攻略</a>
+							</div>
+							<div class="list">
+								<a href="#">杭州</a>
+								<a href="#">温州</a>
+								<a href="#">台州</a>
+								<a href="#">赏花</a>
+								<a href="#">踏青</a>
+							</div>
+							<div class="arrow">&gt;</div>
+							<div class="line"></div>
+							<div class="subitem">
+								<div class="inner">
+									<div class="tit tit1">
+										<div class="name">地域区划</div>
+										<ul>
+											<li>
+												<a href="#">杭州</a>
+											</li>
+											<li>
+												<a href="#">宁波</a>
+											</li>
+											<li>
+												<a href="#">温州</a>
+											</li>
+											<li>
+												<a href="#">嘉兴</a>
+											</li>
+											<li>
+												<a href="#">湖州</a>
+											</li>
+											<li>
+												<a href="#">绍兴</a>
+											</li>
+											<li>
+												<a href="#">丽水</a>
+											</li>
+										</ul>
+										<ul>
+											<li>
+												<a href="#">金华</a>
+											</li>
+											<li>
+												<a href="#">衢州</a>
+											</li>
+											<li>
+												<a href="#">舟山</a>
+											</li>
+											<li>
+												<a href="#">台州</a>
+											</li>
+										</ul>
+									</div>
+									<div class="tit">
+										<div class="name">特色主题</div>
+										<ul>
+											<li>
+												<a href="#">古建筑</a>
+											</li>
+											<li>
+												<a href="#">赏花</a>
+											</li>
+											<li>
+												<a href="#">滩涂</a>
+											</li>
+											<li>
+												<a href="#">踏青</a>
+											</li>
+											<li>
+												<a href="#">怪石</a>
+											</li>
+											<li>
+												<a href="#">绿竹</a>
+											</li>
+											
+											</ul>
+										<ul>
+											<li>
+												<a href="#">传统工艺</a>
+											</li>
+											<li>
+												<a href="#">人文历史</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="index_buttom_right">
+					<div class="index_buttom_right_nav">
+						<div class="index_buttom_right_item index_buttom_right_item_active">精选</div>
+						<div class="index_buttom_right_item">杭州</div>
+						<div class="index_buttom_right_item">嘉兴</div>
+						<div class="index_buttom_right_item">温州</div>
+						<div class="index_buttom_right_item">台州</div>
+						<div class="index_buttom_right_item">宁波</div>
+					</div>
+					<div class="index_buttom_br"></div>
+					<div id="wrap">
+						<ul>
+							<li>
+								<a href="" class="a1">
+									<img src="images/index01.jpg">
+									<div class="divA">
+										<p class="p1">东极岛三日游</p>
+										<p class="p2">大巴/轮船来回+当晚入住特色海景民宿</p>
+										<p class="p3">¥<span>755</span>起</p>
+									</div>
+								</a>
+								<a href="" class="a2">
+									<p class="p4">东极岛三日游</p>
+									<p class="p5">大巴/轮船来回+当晚入住特色海景民宿</p>
+									<p class="p6">¥<span>755</span>起</p>
+									<p class="p7">查看详情></p>
+								</a>
+							</li>
+							<li>
+								<a href="" class="a1">
+									<img src="images/index02.jpg">
+									<div class="divA">
+										<p class="p1">特色石林双人二日游</p>
+										<p class="p2">大巴直达+当晚入住特色民宿+一次特色农家乐</p>
+										<p class="p3">¥<span>460</span>起</p>
+									</div>
+								</a>
+								<a href="" class="a2">
+									<p class="p4">特色石林双人二日游</p>
+									<p class="p5">大巴直达+当晚入住特色民宿+一次特色农家乐</p>
+									<p class="p6">¥<span>460</span>起</p>
+									<p class="p7">查看详情></p>
+								</a>
+							</li>
+							<li>
+								<a href="" class="a1">
+									<img src="images/index03.jpg">
+									<div class="divA">
+										<p class="p1">佛堂二日游</p>
+										<p class="p2">大巴直达+四星级酒店证</p>
+										<p class="p3">¥<span>269</span>起</p>
+									</div>
+								</a>
+								<a href="" class="a2">
+									<p class="p4">佛堂二日游</p>
+									<p class="p5">大巴直达+四星级酒店证</p>
+									<p class="p6">¥<span>269</span>起</p>
+									<p class="p7">查看详情></p>
+								</a>
+							</li>
+							<li>
+								<a href="" class="a1">
+									<img src="images/index04.jpg">
+									<div class="divA">
+										<p class="p1">台州三门渔村+温岭石塘镇三日自由行</p>
+										<p class="p2">大巴接送+特色民宿</p>
+										<p class="p3">¥<span>765</span>起</p>
+									</div>
+								</a>
+								<a href="" class="a2">
+									<p class="p4">台州三门渔村+温岭石塘镇三日自由行</p>
+									<p class="p5">大巴接送+特色民宿</p>
+									<p class="p6">¥<span>765</span>起</p>
+									<p class="p7">查看详情></p>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<script type="text/javascript">
+				//首页旅游产品分类
+				$(".product_sort .bd .item").hover(function() {
+					$(this).addClass("layer");
+				}, function() {
+					$(this).removeClass("layer");
+				});
+			</script>
+
+			<script src="js/jquery.min.js"></script>
+			<script>
+				$(".nav-list li").mousemove(function() {
+					$(this).addClass("header-nav_active");
+					$(this).siblings().removeClass("header-nav_active");
+				})
+				$(".nav-list li").click(function() {
+					$(this).addClass("selecte_active");
+					$(this).siblings().removeClass("selecte_active");
+				})
+
+				$(".index_buttom_right_nav div").mousemove(function() {
+					$(this).addClass("index_buttom_right_item_active");
+					$(this).siblings().removeClass("index_buttom_right_item_active");
+				})
+				$(".index_buttom_right_nav div").click(function() {
+					$(this).addClass("index_buttom_right_item_active");
+					$(this).siblings().removeClass("index_buttom_right_item_active");
+				})
+
+				$(".inner_top_nav").click(function() {
+					//					alert(1)
+					$(this).addClass("inner_top_nav_active");
+					$(this).find('.inner_top_bo').addClass('inner_top_bo_active');
+					$(this).siblings().removeClass("inner_top_nav_active");
+					$(this).siblings().find('.inner_top_bo').removeClass("inner_top_bo_active");
+				})
+
+				var arrdiv = document.getElementsByClassName('inner_bottom');
+				var arrlist = document.getElementsByClassName('inner_top_nav');
+
+				for(var i = 0; i < arrlist.length; i++) {
+					arrlist[i].index = i
+					arrlist[i].addEventListener('click', function() {
+						for(var j = 0; j < arrdiv.length; j++) {
+							arrdiv[j].style.display = "none";
+						}
+						arrdiv[this.index].style.display = "block";
+
+						//					alert(this.index) 
+
+					});
+
+				}
+			</script>
+
+			<script type="text/javascript">
+				$('.index_buttom_right li').mouseenter(function() {
+					$(this).find('.divA').stop().animate({
+						bottom: '-66px'
+					});
+					$(this).find('.a2').css({
+						left: '0'
+					})
+					$(this).children('.a2').find('.p4').css({
+						left: '0'
+					})
+					$(this).children('.a2').find('.p5').css({
+						left: '0'
+					})
+					$(this).children('.a2').find('.p6').css({
+						transform: 'scale(1)'
+					})
+					$(this).children('.a2').find('.p7').css({
+						bottom: '25px'
+					})
+				})
+				$('.index_buttom_right li').mouseleave(function() {
+					$(this).find('.divA').stop().animate({
+						bottom: '0px'
+					});
+					$(this).find('.a2').css({
+						left: -$(this).width()
+					})
+					$(this).children('.a2').find('.p4').css({
+						left: -$(this).width()
+					})
+					$(this).children('.a2').find('.p5').css({
+						left: -$(this).width()
+					})
+					$(this).children('.a2').find('.p6').css({
+						transform: 'scale(1.3)'
+					})
+					$(this).children('.a2').find('.p7').css({
+						bottom: '-50px'
+					})
+				})
+			</script>
+			
+			<script type="text/javascript" src="js/jquery-1.4.4.min.js" ></script>
+			<script type="text/javascript" src="js/castapp.js" ></script>
+			<!--<script type="text/javascript" src="js/bootstrap.js" ></script>-->
+			<script type="text/javascript" src="js/jquery.XYTipsWindow.min.2.8.js" ></script>
+			<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>-->
+			<link rel="stylesheet" type="text/css" href="css/box_style.css"/>
+			<script>
+				
+				 var user = localStorage.getItem('user');
+			 //alert(user);
+			 var user_right = document.getElementById('user_right');
+			 if(user == '' || user == null){
+			 	user_right.innerHTML += '<a id="user_login" style="cursor: pointer;">登录</a>';
+			 }else{
+			 	user_right.innerHTML += '<span>欢迎您,' + user   +'  </span>' 
+			 						 +'<a id="user_exit" style="cursor: pointer;">退出</a>';
+			 }
+				$("#user_login").click(function() {
+//					alert(1)
+					$.XYTipsWindow({
+						___title: "浙江乡村旅游网登录",
+						___content: "iframe:login.html",
+						___width: "460",
+						___height: "300",
+						___showbg: true,
+						___drag: "___boxTitle"
+
+					});
+				});
+				$("#user_exit").click(function() {
+					localStorage.setItem('user', '');
+					user_right.innerHTML = '<a id="user_login" style="cursor: pointer;">登录</a>';
+					alert('退出成功');
+					window.location.reload();
+				});
+			</script>
+
+	</body>
+
+</html>

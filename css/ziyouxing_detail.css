@@ -1,0 +1,369 @@
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: normal;
+    color: #404040;
+    margin: 0;
+}
+*{
+	margin: 0px;
+}
+li{
+	list-style-type:none;
+}
+#container {
+    width: 940px;
+    margin: 0 auto;
+}
+.blog .post-item {
+
+    position: relative;
+}
+
+.post-thumb-hor {
+		margin-top: 20px;
+    overflow: hidden;
+}
+.post-item {
+    border: #ddd solid 1px;
+    border-radius: 2px;
+    margin-bottom: 30px;
+    background: #fff;
+}
+.post-thumb-hor .image-place {
+    float: left;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+}
+.post-item .image-place {
+    overflow: hidden;
+}
+.post-thumb-hor .post-content {
+    margin-left: 200px;
+    padding: 20px;
+    height: 128px;
+}
+
+.post-item .post-content {
+    padding: 10px;
+}
+.post-item .post-title {
+    font-size: 14px;
+    line-height: 1em;
+    margin: 0 0 10px;
+}
+.post-item .post-excerpt {
+    margin: 0;
+}
+.post-content-detail {
+    overflow: hidden;
+    margin: 20px 0 0;
+}
+.post-content-detail li {
+    list-style: none;
+    float: left;
+    padding-right: 10px;
+    margin-right: 10px;
+    border-right: #ccc solid 1px;
+}
+.post-content-detail li span {
+    color: #999;
+    margin: 0 5px 0 0;
+}
+.sprite-stars.star4 {
+    background-position: 0 -151px;
+}
+.sprite-stars {
+    display: inline-block;
+    width: 84px;
+    overflow: hidden;
+    text-indent: -999px;
+    background: url(../images/sprite-stars.png) no-repeat 0 0;
+}
+.post-content-detail li:last-child {
+    border: 0 none;
+}
+
+.post-content-detail li {
+    list-style: none;
+    float: left;
+    padding-right: 10px;
+    margin-right: 10px;
+    border-right: #ccc solid 1px;
+}
+.post-thumb-hor .post-meta {
+    padding-left: 0;
+}
+
+.post-item .post-meta {
+    background: #f7f7f7;
+    border-top: #ddd solid 1px;
+    padding: 10px;
+    font-size: 11px;
+    line-height: 1em;
+    color: #999;
+    height: 1em;
+    margin-top: 20px;
+
+}
+.post-thumb-hor .post-meta .icon-place {
+    margin-left: 20px;
+    padding-left: 0;
+    border: 0 none;
+}
+
+.post-thumb-hor .post-meta span {
+    padding: 0 10px;
+    border-left: #ccc solid 1px;
+}
+
+.one-third {
+    width: 300px;
+}
+
+.one-half, .one-third, .two-third, .one-fourth {
+    float: left;
+    margin-right: 20px;
+    list-style: none;
+}
+#searchmodule {
+    background: #fff;
+    padding: 0;
+    border-radius: 0;
+    border: 0 none;
+    position: relative;
+    margin-bottom: 30px;
+}
+#searchmodule .tab-control {
+    padding: 0;
+    border-radius: 0;
+    border: 0 none;
+    background: #fff;
+    overflow: hidden;
+    margin: 0;
+}
+#searchmodule .tab-control li.ui-tabs-selected {
+    background: #335a96;
+}
+
+#searchmodule .tab-control li {
+    top: 0;
+    margin: 0;
+    border: 0 none;
+    border-right: #ddd solid 1px;
+    border-radius: 0;
+    background: #fff;
+    float: left;
+    list-style: none;
+}
+
+#searchmodule .tab-control li a {
+    color: #999;
+    padding: 10px 20px;
+    float: left;
+    line-height: 15px;
+}
+#searchmodule .tab-control li.ui-tabs-selected a {
+    color: #fff;
+}
+#searchmodule .tab-content {
+    background: #335a96;
+    padding: 20px 20px 10px;
+    color: #fff;
+}
+.one-third #searchmodule .tab-content form {
+    width: 280px;
+}
+.one-third #searchmodule .field {
+    width: 250px;
+    margin: 0 0 20px 0;
+    float: left;
+}
+input, textarea, select {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+}
+.one-third #searchmodule .field {
+    width: 250px;
+    margin: 0 0 20px 0;
+    float: left;
+}
+#searchmodule label {
+    display: block;
+    margin: 0 0 5px;
+}
+.one-third #searchmodule .field .input-text {
+    width: 100%;
+}
+
+.input-text, .button, input, select, textarea, button {
+    color: #565656;
+    border: #ccc solid 1px;
+    padding: 4px;
+    border-radius: 2px;
+}
+.one-third #searchmodule .field.half {
+    width: 120px;
+    margin-right: 20px;
+}
+
+.one-third #searchmodule .field {
+    width: 250px;
+    margin: 0 0 20px 0;
+    float: left;
+}
+.one-third #searchmodule .field.half .input-text {
+    width: 90%;
+}
+.one-third #searchmodule .field.even {
+    margin-right: 0;
+}
+select {
+    padding: 2px;
+}
+
+.input-text, .button, input, select, textarea, button {
+    color: #565656;
+    border: #ccc solid 1px;
+    padding: 4px;
+    border-radius: 2px;
+}
+option {
+    font-weight: normal;
+    display: block;
+    white-space: pre;
+    min-height: 1.2em;
+    padding: 0px 2px 1px;
+}
+#searchmodule .tab-content form .submit {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    background: #ca1830;
+    color: #fff;
+    font-weight: 700;
+    border: 0 none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 0;
+}
+
+.button, input[type="button"], input[type="submit"], button {
+    background: #f7f7f7;
+    cursor: pointer;
+    padding: 2px 5px;
+    display: inline-block;
+}
+br.clear {
+    clear: both;
+    height: 1px;
+    overflow: hidden;
+}
+.widget {
+    border: #ccc solid 1px;
+    background: #fff;
+    margin: 0 0 20px;
+    border-radius: 2px;
+}
+.widget-title {
+    border-bottom: #ca1830 solid 3px;
+    padding: 10px 15px;
+    margin: 0;
+}
+.widget-content {
+    padding: 15px;
+}
+.widget-content ul {
+    margin: 0;
+}
+.widget-content li:first-child {
+    padding-top: 0;
+}
+
+.widget-content li {
+    padding: 10px 0;
+    border-bottom: #ddd solid 1px;
+    list-style: none;
+}
+.link-thumb {
+    overflow: hidden;
+}
+.link-image {
+    float: left;
+}
+.link-image a {
+    padding: 5px;
+    border: #ddd solid 1px;
+    display: block;
+    line-height: 0;
+}
+.link-text {
+    margin-left: 75px;
+}
+.similiar-place h5 {
+    margin: 0 0 5px;
+}
+p, fieldset, table {
+    margin-bottom: 1em;
+}
+.similiar-place .price {
+    padding-right: 10px;
+    margin-right: 5px;
+    border-right: #ccc solid 1px;
+    color: #999;
+}
+.sprite-stars.star4 {
+    background-position: 0 -151px;
+}
+
+.sprite-stars {
+    display: inline-block;
+    width: 84px;
+    overflow: hidden;
+    text-indent: -999px;
+    background: url(../images/sprite-stars.png) no-repeat 0 0;
+}
+.last {
+    margin-right: 0 !important;
+}
+
+.two-third {
+    width: 620px;
+}
+.module-box {
+    border: #ddd solid 1px;
+    padding: 26px;
+    background: #fff;
+}
+.module-box .one-half {
+    width: 48.936%;
+}
+
+.module-box .one-half, .module-box .one-third, .module-box .two-third, .module-box .one-fourth {
+    margin-right: 2.127%;
+}
+.one-half {
+    width: 460px;
+}
+.one-half, .one-third, .two-third, .one-fourth {
+    float: left;
+    margin-right: 20px;
+    list-style: none;
+}
+.module-box .one-half {
+    width: 48.936%;
+}
+img.left {
+    margin: 0 10px 10px 0;
+}
+.left {
+    float: left!important;
+}
+h3 {
+    font-weight: normal;
+    height: 35px;
+}

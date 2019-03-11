@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/ato.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/gonglue.css" />
+		<link rel="stylesheet" type="text/css" href="css/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="css/hotel.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	</head>
+
+	<body style="background: url(images/allbac.jpg);background-attachment:fixed;background-repeat:no-repeat;">
+		<!--顶部-->
+		<div class="header_top">
+			<ul class="index_top_nav" id="user_login_info">
+				<div class="login_menu clearfix">
+					<li>
+						<div id="user_right">
+							<!--<a id="user_login" style="cursor: pointer;">登录</a>-->
+						</div>
+					</li>
+					<li>
+						<a target="_blank"><img src="images/registgift.gif" alt="会员注册有礼" style="height: 22px;line-height: 22px; vertical-align: middle;"></a>
+					</li>
+				</div>
+			</ul>
+			<ul class="index_top_nav nav_right" id="index_top_right">
+				<li class="nav_item item_order">
+					<a target="_blank" rel="nofollow" style="color: #ff8800;">企业频道</a>
+				</li>
+				<li class="nav_item item_order" id="club">
+					<a target="_blank" style="color: #ff8800;">会员俱乐部</a>
+				</li>
+				<li class="nav_item item_order is_order has_arrow has_dropdown">
+					我的订单
+					<i class="header_icon icon_arrow"></i>
+				</li>
+				<li class="nav_item item_siteMap has_arrow has_dropdown">
+					<a>网站地图</a>
+					<i class="header_icon icon_arrow"></i>
+				</li>
+				<li class="nav_item item_weibo">
+					<a class="header_icon icon_weibo vm" rel="nofollow" target="_blank"></a>
+				</li>
+				<li class="nav_item item_qrCode has_dropdown">
+					<i class="header_icon icon_phone" id="isPcOrMobile"><a  class="sitenav_mobile"  target="_blank" rel="nofollow"></a></i>
+				</li>
+				<li class="nav_item item_weixin has_dropdown">
+					<a class="header_icon icon_weixin vm" rel="nofollow" href="#"></a>
+				</li>
+				<li class="nav_item item_mailbox">
+					<a class="header_icon icon_mailbox vm" target="_blank"></a>
+				</li>
+
+			</ul>
+		</div>
+
+		<!--顶部下方-->
+
+		<div class="header_search" style="width: 70%;margin-left: 15%;">
+			<div class="header_inner">
+				<div class="site_logo">
+					<a target="_blank" class="logo_a">
+						<img src="images/logo.png"></a>
+
+				</div>
+				<div class="local_city start_city_box">
+					<div class="head_start_city" id="startCity">
+						<p class="sc_name"><span>绍兴站<i class="header_icon icon_arrow"></i></span></p>
+
+					</div>
+					<p class="grey_color">
+						<a href="#" target="_blank"><img src="images/local_branch.png" width="61" height="16"></a>
+					</p>
+				</div>
+
+				<div class="tn_search_box">
+					<div id="tnSearchBox" class="clearfix">
+						<form id="route_search" name="route_search" method="post" onsubmit="return false;" target="_self">
+							<input type="hidden" placeholder="青岛" name="q" id="q">
+							<input type="hidden" value="4" name="st" id="st">
+							<input type="hidden" value="search_complex" id="from_action">
+							<input id="letter" type="hidden" value="jx">
+							<div class="tn_s_select" id="typename">
+								<span style="">所有产品</span>
+								<div id="spic" class="spic"></div>
+							</div>
+							<p class="tn_s_input">
+								<input type="text" id="keyword-input" placeholder="绍兴" data="" data-cla="" autocomplete="off" style="color: rgb(153, 153, 153);font-size:12px;">
+							</p>
+							<div class="an_mo" liwithhan="搜索按钮">
+								<p class="tn_s_button"><button type="button" class="iconfont icon-sousuo" style="font-size: 30px;color: white;"></button></p>
+							</div>
+							<div id="check_route_hi"></div>
+							<div id="check_route_hi"></div>
+						</form>
+					</div>
+				</div>
+
+				<a class="search_advance" id="seniorSearch" onclick="_gaq.push(['_trackEvent', '首页_jx','点击','高级搜索_默认按钮__'])">高级搜索<i class="header_icon icon_arrow"></i></a>
+				<div class="site_contact" style="background-image: url(images/site_contact_bg.png); background-position: left bottom;">
+					<a class="headTuniuKefu" href="javascript:;"><img src="images/head_tel.png" style="width: 28px;"><span>欢迎使用<i>在线客服</i></span></a>
+					<span class="h_tel_icon"></span>
+					<p class="text" id="service_phone_head_text">24h客户服务电话<em class=""></em></p>
+					<p class="tel" id="service_phone_head_tel">4007-999-999</p>
+					<span class="h_mingxing_icon"></span>
+					<div class="service_phone_box" style="display: none;"><span id="service_phone_box_tel">国内：<i>4007-999-999</i><br>国际：<i>+0086-25-8685-9999</i></span>
+						<div class="arrow"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--首页head_nav-->
+		<div class="header-nav" style="font-size: 14px;">
+			<div class="contain">
+				<ul class="nav-list">
+					<li>
+						<a href="index.html">首页<span class="trig"></span></a>
+					</li>
+					<li>
+						<a href="ziyouxing.html">自由行<span class="trig"></span></a>
+					</li>
+					
+					<li class="selecte_active">
+						<a href="hotel.html">民宿<span class="trig"></span></a>
+					</li>
+					<li>
+						<a href="#">火车票<span class="trig"></span></a>
+					</li>
+					<li>
+						<a href="#">汽车票<span class="trig"></span></a>
+					</li>
+					<li>
+						<a href="dingzhiyou.html">定制游<span class="trig"></span></a>
+					</li>
+					<li>
+						<a href="gonglue.html"trig">攻略</span></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<!--背景图-->
+		<div id="block_886520" class="f1 an_mo" liwithhan="cms_886520_banner">
+			<div id="block" class="block clearfix">
+				<!-- txtModule txtMCity start -->
+				<div class="getprize">
+					<div style="width:100%;text-align:center;"><img src="http://img4.tuniucdn.com/hotel-gzzt160507/lg-bg.png"></div>
+					<input type="tel" class="phone" placeholder="输入手机号 领取优惠券">
+					<div class="btn"></div>
+				</div>
+				<div class="showmeg hide"></div>
+				<!-- txtModule txtMCity end -->
+			</div>
+		</div>
+		<a name="热销古镇"></a>
+		<div id="block_886521" class="f2 an_mo" liwithhan="cms_886521_热销古镇">
+			<div id="block" class="block clearfix">
+				<!-- txtModule txtMCity start -->
+				<div class="city-tab">
+					<ul>
+						<li class="clist1 active">
+							<p class="cwuz tabp-bg" data-name="乌镇">乌镇</p>
+						</li>
+						<li class="clist1">
+							<p class="cxit tabp-bg" data-name="西塘">西塘</p>
+						</li>
+						<li class="clist1">
+							<p class="clij tabp-bg" data-name="石林">石林</p>
+						</li>
+						<li class="clist1">
+							<p class="cdal tabp-bg" data-name="泽雅">泽雅</p>
+						</li>
+						<li class="clist1">
+							<p class="choc tabp-bg" data-name="溪口">溪口</p>
+						</li>
+					</ul>
+				</div>
+				
+				<!--乌镇-->
+				<div class="sort-list" style="display: block;">
+					<dd class="list1">
+						<div class="pic">
+
+							<img src="images/meng.png" class="product-meng">
+							<a href="#" target="_blank">
+								<img src="images/wuzhen1.jpg" style="display: inline;">
+							</a>
+
+							<div class="hotel_addrs">乌镇海角77号民宿</div>
+						</div>
+						<div class="price">
+							<span class="yen">￥</span>
+							<!--产品价格标签不能随便更改  liyuanyuan3-->
+							<span class="yuan">157</span><span class="qi">起</span><span class="yuan1 hide">元</span>
+							<a href="#" target="_blank" class="buynow-type1">立即购买</a>
+						</div>
+					</dd>
+
+					<dd class="list1">
+						<div class="pic">
+
+							<img src="images/meng.png" class="product-meng">
+							<a href="#" target="_blank">
+								<img src="images/wuzhen2.jpg" style="display: inline;">
+							</a>
+							<div class="hotel_addrs">乌镇我行我宿主题酒店</div>
+						</div>
+						<div class="price">
+							<span class="yen">￥</span>
+							<!--产品价格标签不能随便更改  liyuanyuan3-->
+							<span class="yuan">128</span><span class="qi">起</span><span class="yuan1 hide">元</span>
+							<a href="#" target="_blank" class="buynow-type1">立即购买</a>
+						</div>
+					</dd>
+
+					<dd class="list1">
+						<div class="pic">
+
+							<img src="images/meng.png" class="product-meng">
+							<a href="#" target="_blank">
+								<img src="images/wuzhen3.png" style="display: inline;">
+							</a>
+
+							<div class="hotel_addrs">乌镇梵璞主题文化酒店</div>
+						</div>
+						<div class="price">
+							<span class="yen">￥</span>
+							<!--产品价格标签不能随便更改  liyuanyuan3-->
+							<span class="yuan">337</span><span class="qi">起</span><span class="yuan1 hide">元</span>
+							<a href="#" target="_blank" class="buynow-type1">立即购买</a>
+						</div>
+					</dd>
+				</div>
+				
+				<!--西塘-->
+				<div class="sort-list" style="display: none;">
+					<dd class="list1">
+						<div class="pic">
+
+							<img src="images/meng.png" class="product-meng">
+							<a href="#" target="_blank">
+								<img src="images/xitang1.jpg" style="display: inline;">
+							</a>
+
+							<div class="hotel_addrs">西塘水木印象生活馆</div>
+						</div>
+						<div class="price">
+							<span class="yen">￥</span>
+							<!--产品价格标签不能随便更改  liyuanyuan3-->
+							<span class="yuan">40</span><span class="qi">起</span><span class="yuan1 hide">元</span>
+							<a href="#" target="_blank" class="buynow-type1">立即购买</a>
+						</div>
+					</dd>
+
+					<dd class="list1">
+						<div class="pic">
+
+							<img src="images/meng.png" class="product-meng">
+							<a href="#" target="_blank">
+								<img src="images/xitang2.jpg" style="display: inline;">
+							</a>
+							<div class="hotel_addrs">西塘绿野仙踪主题客栈</div>
+						</div>
+						<div class="price">
+							<span class="yen">￥</span>
+							<!--产品价格标签不能随便更改  liyuanyuan3-->
+							<span class="yuan">118</span><span class="qi">起</span><span class="yuan1 hide">元</span>
+							<a href="#" target="_blank" class="buynow-type1">立即购买</a>
+						</div>
+					</dd>
+
+					<dd class="list1">
+						<div class="pic">
+
+							<img src="images/meng.png" class="product-meng">
+							<a href="#" target="_blank">
+								<img src="images/xitang3.jpg" style="display: inline;">
+							</a>
+
+							<div class="hotel_addrs">西塘彩云堂国际青年旅舍</div>
+						</div>
+						<div class="price">
+							<span class="yen">￥</span>
+							<!--产品价格标签不能随便更改  liyuanyuan3-->
+							<span class="yuan">160</span><span class="qi">起</span><span class="yuan1 hide">元</span>
+							<a href="#" target="_blank" class="buynow-type1">立即购买</a>
+						</div>
+					</dd>
+				</div>
+				
+				<!--石林-->
+				<div class="sort-list" style="display: none;">
+					<dd class="list1">
+						<div class="pic">
+
+							<img src="images/meng.png" class="product-meng">
+							<a href="#" target="_blank">
+								<img src="images/shilin1.jpg" style="display: inline;">
+							</a>
+
+							<div class="hotel_addrs">果朴民宿</div>
+						</div>
+						<div class="price">
+							<span class="yen">￥</span>
+							<!--产品价格标签不能随便更改  liyuanyuan3-->
+							<span class="yuan">178</span><span class="qi">起</span><span class="yuan1 hide">元</span>
+							<a href="#" target="_blank" class="buynow-type1">立即购买</a>
+						</div>
+					</dd>
+
+					<dd class="list1">
+						<div class="pic">
+
+							<img src="images/meng.png" class="product-meng">
+							<a href="#" target="_blank">
+								<img src="images/shilin2.jpg" style="display: inline;">
+							</a>
+							<div class="hotel_addrs">宜郊乐民宿</div>
+						</div>
+						<div class="price">
+							<span class="yen">￥</span>
+							<!--产品价格标签不能随便更改  liyuanyuan3-->
+							<span class="yuan">108</span><span class="qi">起</span><span class="yuan1 hide">元</span>
+							<a href="#" target="_blank" class="buynow-type1">立即购买</a>
+						</div>
+					</dd>
+
+					<dd class="list1">
+						<div class="pic">
+
+							<img src="images/meng.png" class="product-meng">
+							<a href="#" target="_blank">
+								<img src="images/shilin3.jpg" style="display: inline;">
+							</a>
+
+							<div class="hotel_addrs">淳朴民宿</div>
+						</div>
+						<div class="price">
+							<span class="yen">￥</span>
+							<!--产品价格标签不能随便更改  liyuanyuan3-->
+							<span class="yuan">117</span><span class="qi">起</span><span class="yuan1 hide">元</span>
+							<a href="#" target="_blank" class="buynow-type1">立即购买</a>
+						</div>
+					</dd>
+				</div>
+				
+				<!--雅泽-->
+				<div class="sort-list" style="display: none;">
+					<dd class="list1">
+						<div class="pic">
+
+							<img src="images/meng.png" class="product-meng">
+							<a href="#" target="_blank">
+								<img src="images/yaze1.jpg" style="display: inline;">
+							</a>
+
+							<div class="hotel_addrs">景逸精品民宿</div>
+						</div>
+						<div class="price">
+							<span class="yen">￥</span>
+							<!--产品价格标签不能随便更改  liyuanyuan3-->
+							<span class="yuan">215</span><span class="qi">起</span><span class="yuan1 hide">元</span>
+							<a href="#" target="_blank" class="buynow-type1">立即购买</a>
+						</div>
+					</dd>
+
+					<dd class="list1">
+						<div class="pic">
+
+							<img src="images/meng.png" class="product-meng">
+							<a href="#" target="_blank">
+								<img src="images/yaze2.jpg" style="display: inline;">
+							</a>
+							<div class="hotel_addrs">爱客思精品酒店</div>
+						</div>
+						<div class="price">
+							<span class="yen">￥</span>
+							<!--产品价格标签不能随便更改  liyuanyuan3-->
+							<span class="yuan">179</span><span class="qi">起</span><span class="yuan1 hide">元</span>
+							<a href="#" target="_blank" class="buynow-type1">立即购买</a>
+						</div>
+					</dd>
+
+					<dd class="list1">
+						<div class="pic">
+
+							<img src="images/meng.png" class="product-meng">
+							<a href="#" target="_blank">
+								<img src="images/yaze3.jpg" style="display: inline;">
+							</a>
+
+							<div class="hotel_addrs">云深处民宿</div>
+						</div>
+						<div class="price">
+							<span class="yen">￥</span>
+							<!--产品价格标签不能随便更改  liyuanyuan3-->
+							<span class="yuan">155</span><span class="qi">起</span><span class="yuan1 hide">元</span>
+							<a href="#" target="_blank" class="buynow-type1">立即购买</a>
+						</div>
+					</dd>
+				</div>
+				
+				<!--溪口-->
+				<div class="sort-list" style="display: none;">
+					<dd class="list1">
+						<div class="pic">
+
+							<img src="images/meng.png" class="product-meng">
+							<a href="#" target="_blank">
+								<img src="images/xikou1.jpg" style="display: inline;">
+							</a>
+
+							<div class="hotel_addrs">农家民宿</div>
+						</div>
+						<div class="price">
+							<span class="yen">￥</span>
+							<!--产品价格标签不能随便更改  liyuanyuan3-->
+							<span class="yuan">179</span><span class="qi">起</span><span class="yuan1 hide">元</span>
+							<a href="#" target="_blank" class="buynow-type1">立即购买</a>
+						</div>
+					</dd>
+
+					<dd class="list1">
+						<div class="pic">
+
+							<img src="images/meng.png" class="product-meng">
+							<a href="#" target="_blank">
+								<img src="images/xikou2.jpg" style="display: inline;">
+							</a>
+							<div class="hotel_addrs">武岭宾馆</div>
+						</div>
+						<div class="price">
+							<span class="yen">￥</span>
+							<!--产品价格标签不能随便更改  liyuanyuan3-->
+							<span class="yuan">165</span><span class="qi">起</span><span class="yuan1 hide">元</span>
+							<a href="#" target="_blank" class="buynow-type1">立即购买</a>
+						</div>
+					</dd>
+
+					<dd class="list1">
+						<div class="pic">
+
+							<img src="images/meng.png" class="product-meng">
+							<a href="#" target="_blank">
+								<img src="images/xikou3.jpg" style="display: inline;">
+							</a>
+
+							<div class="hotel_addrs">水镜阁度假酒店</div>
+						</div>
+						<div class="price">
+							<span class="yen">￥</span>
+							<!--产品价格标签不能随便更改  liyuanyuan3-->
+							<span class="yuan">205</span><span class="qi">起</span><span class="yuan1 hide">元</span>
+							<a href="#" target="_blank" class="buynow-type1">立即购买</a>
+						</div>
+					</dd>
+				</div>
+				
+			</div>
+		</div>
+
+		<!--江南水乡-->
+		<div id="block_886521" class="f3 an_mo" liwithhan="cms_886521_江南水乡">
+			<div id="block" class="block clearfix">
+				<!-- txtModule txtMCity start -->
+				<div class="city-tab">
+					<ul>
+						<li class="clist2 active">
+							<p class="cwuz tabp-bg" data-name="清港">清港</p>
+						</li>
+						<li class="clist2">
+							<p class="cxit tabp-bg" data-name="岩头">岩头</p>
+						</li>
+						<li class="clist2">
+							<p class="clij tabp-bg" data-name="东极">东极</p>
+						</li>
+						<li class="clist2">
+							<p class="cdal tabp-bg" data-name="菜园	">菜园</p>
+						</li>
+						<li class="clist2">
+							<p class="choc tabp-bg" data-name="老竹">老竹</p>
+						</li>
+					</ul>
+				</div>
+				
+				<!--清港-->
+				<div class="sort-list2" style="display: block;">
+					<dd class="list1">
+						<div class="pic">
+
+							<img src="images/meng.png" class="product-meng">
+							<a href="#" target="_blank">
+								<img src="images/qinggang1.jpg" style="display: inline;">
+							</a>
+
+							<div class="hotel_addrs">玉环花涧堂乡村度假别院</div>
+						</div>
+						<div class="price">
+							<span class="yen">￥</span>
+							<!--产品价格标签不能随便更改  liyuanyuan3-->
+							<span class="yuan">215</span><span class="qi">起</span><span class="yuan1 hide">元</span>
+							<a href="#" target="_blank" class="buynow-type1">立即购买</a>
+						</div>
+					</dd>
+
+					<dd class="list1">
+						<div class="pic">
+
+							<img src="images/meng.png" class="product-meng">
+							<a href="#" target="_blank">
+								<img src="images/qinggang2.jpg" style="display: inline;">
+							</a>
+
+							<div class="hotel_addrs">嘉耀商务宾馆</div>
+						</div>
+						<div class="price">
+							<span class="yen">￥</span>
+							<!--产品价格标签不能随便更改  liyuanyuan3-->
+							<span class="yuan">175</span><span class="qi">起</span><span class="yuan1 hide">元</span>
+							<a href="#" target="_blank" class="buynow-type1">立即购买</a>
+						</div>
+					</dd>
+
+					<dd class="list1">
+						<div class="pic">
+
+							<img src="images/meng.png" class="product-meng">
+							<a href="#" target="_blank">
+								<img src="images/qinggang3.jpg" style="display: inline;">
+							</a>
+
+							<div class="hotel_addrs">玉环鼎泰商务酒店</div>
+						</div>
+						<div class="price">
+							<span class="yen">￥</span>
+							<!--产品价格标签不能随便更改  liyuanyuan3-->
+							<span class="yuan">148</span><span class="qi">起</span><span class="yuan1 hide">元</span>
+							<a href="#" target="_blank" class="buynow-type1">立即购买</a>
+						</div>
+					</dd>
+				</div>
+				
+				<!--岩头-->
+				<div class="sort-list2" style="display: none;">
+					<dd class="list1">
+						<div class="pic">
+
+							<img src="images/meng.png" class="product-meng">
+							<a href="#" target="_blank">
+								<img src="images/yantou1.jpg" style="display: inline;">
+							</a>
+
+							<div class="hotel_addrs">楠溪江白鹭滩·乡村别院客栈</div>
+						</div>
+						<div class="price">
+							<span class="yen">￥</span>
+							<!--产品价格标签不能随便更改  liyuanyuan3-->
+							<span class="yuan">146</span><span class="qi">起</span><span class="yuan1 hide">元</span>
+							<a href="#" target="_blank" class="buynow-type1">立即购买</a>
+						</div>
+					</dd>
+
+					<dd class="list1">
+						<div class="pic">
+
+							<img src="images/meng.png" class="product-meng">
+							<a href="#" target="_blank">
+								<img src="images/yantou2.jpg" style="display: inline;">
+							</a>
+
+							<div class="hotel_addrs">林坑南楼阁客栈 </div>
+						</div>
+						<div class="price">
+							<span class="yen">￥</span>
+							<!--产品价格标签不能随便更改  liyuanyuan3-->
+							<span class="yuan">108</span><span class="qi">起</span><span class="yuan1 hide">元</span>
+							<a href="#" target="_blank" class="buynow-type1">立即购买</a>
+						</div>
+					</dd>
+
+					<dd class="list1">
+						<div class="pic">
+
+							<img src="images/meng.png" class="product-meng">
+							<a href="#" target="_blank">
+								<img src="images/yantou3.jpg" style="display: inline;">
+							</a>
+
+							<div class="hotel_addrs">永嘉笔墨园</div>
+						</div>
+						<div class="price">
+							<span class="yen">￥</span>
+							<!--产品价格标签不能随便更改  liyuanyuan3-->
+							<span class="yuan">168</span><span class="qi">起</span><span class="yuan1 hide">元</span>
+							<a href="#" target="_blank" class="buynow-type1">立即购买</a>
+						</div>
+					</dd>
+				</div>
+				
+				<!--东极-->
+				<div class="sort-list2" style="display: none;">
+					<dd class="list1">
+						<div class="pic">
+
+							<img src="images/meng.png" class="product-meng">
+							<a href="#" target="_blank">
+								<img src="images/dongji1.jpg" style="display: inline;">
+							</a>
+
+							<div class="hotel_addrs">东极海浪花住宿</div>
+						</div>
+						<div class="price">
+							<span class="yen">￥</span>
+							<!--产品价格标签不能随便更改  liyuanyuan3-->
+							<span class="yuan">139</span><span class="qi">起</span><span class="yuan1 hide">元</span>
+							<a href="#" target="_blank" class="buynow-type1">立即购买</a>
+						</div>
+					</dd>
+
+					<dd class="list1">
+						<div class="pic">
+
+							<img src="images/meng.png" class="product-meng">
+							<a href="#" target="_blank">
+								<img src="images/dongji2.jpg" style="display: inline;">
+							</a>
+
+							<div class="hotel_addrs">东极海边之家客栈 </div>
+						</div>
+						<div class="price">
+							<span class="yen">￥</span>
+							<!--产品价格标签不能随便更改  liyuanyuan3-->
+							<span class="yuan">150</span><span class="qi">起</span><span class="yuan1 hide">元</span>
+							<a href="#" target="_blank" class="buynow-type1">立即购买</a>
+						</div>
+					</dd>
+
+					<dd class="list1">
+						<div class="pic">
+
+							<img src="images/meng.png" class="product-meng">
+							<a href="#" target="_blank">
+								<img src="images/dongji3.jpg" style="display: inline;">
+							</a>
+
+							<div class="hotel_addrs">驿旅阳光民宿</div>
+						</div>
+						<div class="price">
+							<span class="yen">￥</span>
+							<!--产品价格标签不能随便更改  liyuanyuan3-->
+							<span class="yuan">166</span><span class="qi">起</span><span class="yuan1 hide">元</span>
+							<a href="#" target="_blank" class="buynow-type1">立即购买</a>
+						</div>
+					</dd>
+				</div>
+				
+				<!--菜园-->
+				<div class="sort-list2" style="display: none;">
+					<dd class="list1">
+						<div class="pic">
+
+							<img src="images/meng.png" class="product-meng">
+							<a href="#" target="_blank">
+								<img src="images/caiyuan1.jpg" style="display: inline;">
+							</a>
+
+							<div class="hotel_addrs">嵊泗云雾山庄民宿南长途沙滩店</div>
+						</div>
+						<div class="price">
+							<span class="yen">￥</span>
+							<!--产品价格标签不能随便更改  liyuanyuan3-->
+							<span class="yuan">198</span><span class="qi">起</span><span class="yuan1 hide">元</span>
+							<a href="#" target="_blank" class="buynow-type1">立即购买</a>
+						</div>
+					</dd>
+
+					<dd class="list1">
+						<div class="pic">
+
+							<img src="images/meng.png" class="product-meng">
+							<a href="#" target="_blank">
+								<img src="images/caiyuan2.jpg" style="display: inline;">
+							</a>
+
+							<div class="hotel_addrs">嵊泗唐·里客栈</div>
+						</div>
+						<div class="price">
+							<span class="yen">￥</span>
+							<!--产品价格标签不能随便更改  liyuanyuan3-->
+							<span class="yuan">208</span><span class="qi">起</span><span class="yuan1 hide">元</span>
+							<a href="#" target="_blank" class="buynow-type1">立即购买</a>
+						</div>
+					</dd>
+
+					<dd class="list1">
+						<div class="pic">
+
+							<img src="images/meng.png" class="product-meng">
+							<a href="#" target="_blank">
+								<img src="images/caiyuan3.jpg" style="display: inline;">
+							</a>
+
+							<div class="hotel_addrs">嵊泗龙港宾馆 </div>
+						</div>
+						<div class="price">
+							<span class="yen">￥</span>
+							<!--产品价格标签不能随便更改  liyuanyuan3-->
+							<span class="yuan">132</span><span class="qi">起</span><span class="yuan1 hide">元</span>
+							<a href="#" target="_blank" class="buynow-type1">立即购买</a>
+						</div>
+					</dd>
+				</div>
+				
+				<!--老竹-->
+				<div class="sort-list2" style="display: none;">
+					<dd class="list1">
+						<div class="pic">
+
+							<img src="images/meng.png" class="product-meng">
+							<a href="#" target="_blank">
+								<img src="images/laozhu1.jpg" style="display: inline;">
+							</a>
+
+							<div class="hotel_addrs">田园小筑客栈</div>
+						</div>
+						<div class="price">
+							<span class="yen">￥</span>
+							<!--产品价格标签不能随便更改  liyuanyuan3-->
+							<span class="yuan">108</span><span class="qi">起</span><span class="yuan1 hide">元</span>
+							<a href="#" target="_blank" class="buynow-type1">立即购买</a>
+						</div>
+					</dd>
+
+					<dd class="list1">
+						<div class="pic">
+
+							<img src="images/meng.png" class="product-meng">
+							<a href="#" target="_blank">
+								<img src="images/laozhu2.jpg" style="display: inline;">
+							</a>
+
+							<div class="hotel_addrs">东西岩新畲家山寨民宿</div>
+						</div>
+						<div class="price">
+							<span class="yen">￥</span>
+							<!--产品价格标签不能随便更改  liyuanyuan3-->
+							<span class="yuan">118</span><span class="qi">起</span><span class="yuan1 hide">元</span>
+							<a href="#" target="_blank" class="buynow-type1">立即购买</a>
+						</div>
+					</dd>
+
+					<dd class="list1">
+						<div class="pic">
+
+							<img src="images/meng.png" class="product-meng">
+							<a href="#" target="_blank">
+								<img src="images/laozhu3.jpg" style="display: inline;">
+							</a>
+
+							<div class="hotel_addrs">青腾小院民宿 </div>
+						</div>
+						<div class="price">
+							<span class="yen">￥</span>
+							<!--产品价格标签不能随便更改  liyuanyuan3-->
+							<span class="yuan">98</span><span class="qi">起</span><span class="yuan1 hide">元</span>
+							<a href="#" target="_blank" class="buynow-type1">立即购买</a>
+						</div>
+					</dd>
+				</div>
+				
+				
+				
+				
+			</div>
+		</div>
+
+		<script src="js/bootstrap.js"></script>
+		<script type="text/javascript" src="js/jquery-1.4.4.min.js"></script>
+		<script type="text/javascript" src="js/castapp.js"></script>
+		<!--<script type="text/javascript" src="js/bootstrap.js" ></script>-->
+		<script type="text/javascript" src="js/jquery.XYTipsWindow.min.2.8.js"></script>
+		<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>-->
+		<link rel="stylesheet" type="text/css" href="css/box_style.css" />
+		<script>
+			$(".nav-list li").mousemove(function() {
+					$(this).addClass("header-nav_active");
+					$(this).siblings().removeClass("header-nav_active");
+				})
+				$(".nav-list li").click(function() {
+					$(this).addClass("selecte_active");
+					$(this).siblings().removeClass("selecte_active");
+				})
+				
+			var user = localStorage.getItem('user');
+			//alert(user);
+			var user_right = document.getElementById('user_right');
+			if(user == '' || user == null) {
+				user_right.innerHTML += '<a id="user_login" style="cursor: pointer;">登录</a>';
+			} else {
+				user_right.innerHTML += '<span>欢迎您,' + user + '  </span>' +
+					'<a id="user_exit" style="cursor: pointer;">退出</a>';
+			}
+			$("#user_login").click(function() {
+				//					alert(1)
+				$.XYTipsWindow({
+					___title: "浙江乡村旅游网登录",
+					___content: "iframe:login.html",
+					___width: "460",
+					___height: "300",
+					___showbg: true,
+					___drag: "___boxTitle"
+
+				});
+			});
+			$("#user_exit").click(function() {
+				localStorage.setItem('user', '');
+				user_right.innerHTML = '<a id="user_login" style="cursor: pointer;">登录</a>';
+				alert('退出成功');
+				window.location.reload();
+			});
+
+			$(".clist1").click(function() {
+				$(this).addClass("active");
+				$(this).siblings().removeClass("active");
+			});
+
+			var arrlist = document.getElementsByClassName('clist1');
+			var arrdiv = document.getElementsByClassName('sort-list');
+
+			for(var i = 0; i < arrlist.length; i++) {
+				arrlist[i].index = i
+				arrlist[i].addEventListener('click', function() {
+					for(var j = 0; j < arrdiv.length; j++) {
+						arrdiv[j].style.display = "none";
+					}
+					arrdiv[this.index].style.display = "block";
+
+					//					alert(this.index) 
+
+				});
+
+			}
+			
+			var arrlist2 = document.getElementsByClassName('clist2');
+			var arrdiv2 = document.getElementsByClassName('sort-list2');
+
+			for(var i = 0; i < arrlist2.length; i++) {
+				arrlist2[i].index = i
+				arrlist2[i].addEventListener('click', function() {
+					for(var j = 0; j < arrdiv2.length; j++) {
+						arrdiv2[j].style.display = "none";
+					}
+					arrdiv2[this.index].style.display = "block";
+
+					//					alert(this.index) 
+
+				});
+
+			}
+			$(".clist2").click(function() {
+				$(this).addClass("active");
+				$(this).siblings().removeClass("active");
+			});
+		</script>
+	</body>
+
+</html>

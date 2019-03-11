@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/ato.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/gonglue.css" />
+		<link rel="stylesheet" type="text/css" href="css/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="css/ziyouxing.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+
+	<body style="background: url(images/allbac.jpg);background-attachment:fixed;background-repeat:no-repeat;">
+		<!--顶部-->
+		<div class="header_top">
+			<ul class="index_top_nav" id="user_login_info">
+				<div class="login_menu clearfix">
+					<li>
+						<div id="user_right">
+							<!--<a id="user_login" style="cursor: pointer;">登录</a>-->
+						</div>
+					</li>
+					<li>
+						<a target="_blank"><img src="images/registgift.gif" alt="会员注册有礼" style="height: 22px;line-height: 22px; vertical-align: middle;"></a>
+					</li>
+				</div>
+			</ul>
+			<ul class="index_top_nav nav_right" id="index_top_right">
+				<li class="nav_item item_order">
+					<a target="_blank" rel="nofollow" style="color: #ff8800;">企业频道</a>
+				</li>
+				<li class="nav_item item_order" id="club">
+					<a target="_blank" style="color: #ff8800;">会员俱乐部</a>
+				</li>
+				<li class="nav_item item_order is_order has_arrow has_dropdown">
+					我的订单
+					<i class="header_icon icon_arrow"></i>
+				</li>
+				<li class="nav_item item_siteMap has_arrow has_dropdown">
+					<a>网站地图</a>
+					<i class="header_icon icon_arrow"></i>
+				</li>
+				<li class="nav_item item_weibo">
+					<a class="header_icon icon_weibo vm" rel="nofollow" target="_blank"></a>
+				</li>
+				<li class="nav_item item_qrCode has_dropdown">
+					<i class="header_icon icon_phone" id="isPcOrMobile"><a  class="sitenav_mobile"  target="_blank" rel="nofollow"></a></i>
+				</li>
+				<li class="nav_item item_weixin has_dropdown">
+					<a class="header_icon icon_weixin vm" rel="nofollow" href="#"></a>
+				</li>
+				<li class="nav_item item_mailbox">
+					<a class="header_icon icon_mailbox vm" target="_blank"></a>
+				</li>
+
+			</ul>
+		</div>
+
+		<!--顶部下方-->
+
+		<div class="header_search" style="width: 70%;margin-left: 15%;">
+			<div class="header_inner">
+				<div class="site_logo">
+					<a target="_blank" class="logo_a">
+						<img src="images/logo.png"></a>
+
+				</div>
+				<div class="local_city start_city_box">
+					<div class="head_start_city" id="startCity">
+						<p class="sc_name"><span>绍兴站<i class="header_icon icon_arrow"></i></span></p>
+
+					</div>
+					<p class="grey_color">
+						<a href="#" target="_blank"><img src="images/local_branch.png" width="61" height="16"></a>
+					</p>
+				</div>
+
+				<div class="tn_search_box">
+					<div id="tnSearchBox" class="clearfix">
+						<form id="route_search" name="route_search" method="post" onsubmit="return false;" target="_self">
+							<input type="hidden" placeholder="青岛" name="q" id="q">
+							<input type="hidden" value="4" name="st" id="st">
+							<input type="hidden" value="search_complex" id="from_action">
+							<input id="letter" type="hidden" value="jx">
+							<div class="tn_s_select" id="typename">
+								<span style="">所有产品</span>
+								<div id="spic" class="spic"></div>
+							</div>
+							<p class="tn_s_input">
+								<input type="text" id="keyword-input" placeholder="绍兴" data="" data-cla="" autocomplete="off" style="color: rgb(153, 153, 153);font-size:12px;">
+							</p>
+							<div class="an_mo" liwithhan="搜索按钮">
+								<p class="tn_s_button"><button type="button" class="iconfont icon-sousuo" style="font-size: 30px;color: white;"></button></p>
+							</div>
+							<div id="check_route_hi"></div>
+							<div id="check_route_hi"></div>
+						</form>
+					</div>
+				</div>
+
+				<a class="search_advance" id="seniorSearch" onclick="_gaq.push(['_trackEvent', '首页_jx','点击','高级搜索_默认按钮__'])">高级搜索<i class="header_icon icon_arrow"></i></a>
+				<div class="site_contact" style="background-image: url(images/site_contact_bg.png); background-position: left bottom;">
+					<a class="headTuniuKefu" href="javascript:;"><img src="images/head_tel.png" style="width: 28px;"><span>欢迎使用<i>在线客服</i></span></a>
+					<span class="h_tel_icon"></span>
+					<p class="text" id="service_phone_head_text">24h客户服务电话<em class=""></em></p>
+					<p class="tel" id="service_phone_head_tel">4007-999-999</p>
+					<span class="h_mingxing_icon"></span>
+					<div class="service_phone_box" style="display: none;"><span id="service_phone_box_tel">国内：<i>4007-999-999</i><br>国际：<i>+0086-25-8685-9999</i></span>
+						<div class="arrow"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--首页head_nav-->
+		<div class="header-nav" style="font-size: 14px;">
+			<div class="contain">
+				<ul class="nav-list">
+					<li>
+						<a href="index.html">首页<span class="trig"></span></a>
+					</li>
+					<li class="selecte_active">
+						<a href="ziyouxing.html">自由行<span class="trig"></span></a>
+					</li>	
+					<li ">
+						<a href="hotel.html">民宿<span class="trig"></span></a>
+					</li>
+					<li>
+						<a href="#">火车票<span class="trig"></span></a>
+					</li>
+					<li>
+						<a href="#">汽车票<span class="trig"></span></a>
+					</li>
+					<li>
+						<a href="dingzhiyou.html">定制游<span class="trig"></span></a>
+					</li>
+					<li>
+						<a href="gonglue.html" trig ">攻略</span></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		
+		<div >
+			<div class="tag-filter ">
+                <ul>
+                    <li><a class="selected " data-filter="* ">全部</a></li>
+                    <li><a>杭州</a></li>
+                    <li><a>宁波</a></li>
+                    <li><a>温州</a></li>
+                    <li><a>嘉兴</a></li>
+                    <li><a>湖州</a></li>
+                    <li><a>绍兴</a></li>
+                    <li><a>丽水</a></li>
+                    <li><a>金华</a></li>
+                    <li><a>衢州</a></li>
+                    <li><a>舟山</a></li>
+                    <li><a>台州</a></li>
+                </ul>
+            </div>
+            <div class="tag-filter-container isotope" style="position: relative; overflow: hidden; height: 900px;">
+				<div class="one-fourth travel isotope-item" style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 0px, 0px);">
+					<div class="post-item">
+						<div class="image-place">
+							<img src="images/ziyouxing01.jpg" alt="image">						</div>
+						<div class="post-content">
+							<h2 class="post-title"><a href="ziyouxing_detail.html">东极岛</a></h2>
+							<p class="post-excerpt"> 大巴/轮船来回+当晚入住特色海景民宿</p>
+						</div>
+						<div class="post-meta">
+							<span class="comment-count">￥755</span>
+							<a class="read-more" href="ziyouxing_detail.html">Read More</a>						</div>
+					</div>
+				</div>
+				
+				<div class="one-fourth holidays isotope-item" style="position: absolute; left: 0px; top: 0px; transform: translate3d(240px, 0px, 0px);">
+					<div class="post-item">
+						<div class="image-place">
+							<img src="images/ziyouxing02.jpg" alt="image">						</div>
+						<div class="post-content">
+							<h2 class="post-title"><a href="ziyouxing_detail.html">石林</a></h2>
+							<p class="post-excerpt">大巴直达+当晚入住特色民宿+一次特色农家乐</p>
+						</div>
+						<div class="post-meta">
+							<span class="comment-count">￥460</span>
+							<a class="read-more" href="ziyouxing_detail.html">Read More</a>						</div>
+					</div>
+				</div>
+				
+				<div class="one-fourth holidays isotope-item" style="position: absolute; left: 0px; top: 0px; transform: translate3d(480px, 0px, 0px);">
+					<div class="post-item">
+						<div class="image-place">
+							<img src="images/ziyouxing03.jpg" alt="image">						</div>
+						<div class="post-content">
+							<h2 class="post-title"><a href="ziyouxing_detail.html">佛堂</a></h2>
+							<p class="post-excerpt">大巴直达+四星级酒店</p>
+						</div>
+						<div class="post-meta">
+							<span class="comment-count">￥269</span>
+							<a class="read-more" href="ziyouxing_detail.html">Read More</a>						</div>
+					</div>
+				</div>
+				
+				<div class="one-fourth holidays isotope-item" style="position: absolute; left: 0px; top: 0px; transform: translate3d(720px, 0px, 0px);">
+					<div class="post-item">
+						<div class="image-place">
+							<img src="images/ziyouxing04.jpg" alt="image">						</div>
+						<div class="post-content">
+							<h2 class="post-title"><a href="ziyouxing_detail.html">三门渔村+温岭石塘镇</a></h2>
+							<p class="post-excerpt">大巴接送+特色民宿 </p>
+						</div>
+						<div class="post-meta">
+							<span class="comment-count">￥765</span>
+							<a class="read-more" href="ziyouxing_detail.html">Read More</a>						</div>
+					</div>
+				</div>
+				
+				<div class="one-fourth hotel isotope-item" style="position: absolute; left: 0px; top: 25px; transform: translate3d(0px, 300px, 0px);">
+					<div class="post-item">
+						<div class="image-place">
+							<img src="images/ziyouxing05.jpg" alt="image">						</div>
+						<div class="post-content">
+							<h2 class="post-title"><a href="ziyouxing_detail.html">芙蓉镇</a></h2>
+							<p class="post-excerpt">大巴直达+主题特色民宿2晚+一次特色农家餐</p>
+						</div>
+						<div class="post-meta">
+							<span class="comment-count">￥779</span>
+							<a class="read-more" href="ziyouxing_detail.html">Read More</a>						</div>
+					</div>
+				</div>
+				
+				<div class="one-fourth travel isotope-item" style="position: absolute; left: 0px; top: 25px; transform: translate3d(240px, 300px, 0px);">
+					<div class="post-item">
+						<div class="image-place">
+							<img src="images/ziyouxing06.jpg" alt="image">						</div>
+						<div class="post-content">
+							<h2 class="post-title"><a href="ziyouxing_detail.html">古镇乌镇</a></h2>
+							<p class="post-excerpt">四星级名宿一晚（含早餐）+乌镇东栅、西栅门票2张</p>
+						</div>
+						<div class="post-meta">
+							<span class="comment-count">￥393</span>
+							<a class="read-more" href="ziyouxing_detail.html">Read More</a>						</div>
+					</div>
+				</div>
+				
+				<div class="one-fourth travel isotope-item" style="position: absolute; left: 0px; top: 25px; transform: translate3d(480px, 300px, 0px);">
+					<div class="post-item">
+						<div class="image-place">
+							<img src="images/ziyouxing07.jpg" alt="image">						</div>
+						<div class="post-content">
+							<h2 class="post-title"><a href="ziyouxing_detail.html">西塘古镇</a></h2>
+							<p class="post-excerpt">大巴直达+特色民宿一晚（标准间）+景点门票</p>
+						</div>
+						<div class="post-meta">
+							<span class="comment-count">￥325</span>
+							<a class="read-more" href="ziyouxing_detail.html">Read More</a>						</div>
+					</div>
+				</div>
+				
+				<div class="one-fourth holidays isotope-item" style="position: absolute; left: 0px; top: 25px; transform: translate3d(720px, 300px, 0px);">
+					<div class="post-item">
+						<div class="image-place">
+							<img src="images/ziyouxing08.jpg" alt="image">						</div>
+						<div class="post-content">
+							<h2 class="post-title"><a href="ziyouxing_detail.html">湖州双林镇</a></h2>
+							<p class="post-excerpt">大巴直达+四星级酒店</p>
+						</div>
+						<div class="post-meta">
+							<span class="comment-count">￥300</span>
+							<a class="read-more" href="ziyouxing_detail.html">Read More</a>						</div>
+					</div>
+				</div>
+				
+				
+				
+			</div>
+		</div>
+		
+		<script type="text/javascript" src="js/jquery.js" ></script>
+		<script>
+			$(".nav-list li").mousemove(function() {
+					$(this).addClass("header-nav_active");
+					$(this).siblings().removeClass("header-nav_active");
+				})
+				$(".nav-list li").click(function() {
+					$(this).addClass("selecte_active");
+					$(this).siblings().removeClass("selecte_active");
+				});
+			var user = localStorage.getItem('user');
+			//alert(user);
+			var user_right = document.getElementById('user_right');
+			if(user == '' || user == null) {
+				user_right.innerHTML += '<a id="user_login " style="cursor: pointer; ">登录</a>';
+			} else {
+				user_right.innerHTML += '<span>欢迎您,' + user + '  </span>' +
+					'<a id="user_exit " style="cursor: pointer; ">退出</a>';
+			}
+			$("#user_login ").click(function() {
+				//					alert(1)
+				$.XYTipsWindow({
+					___title: "浙江乡村旅游网登录 ",
+					___content: "iframe:login.html ",
+					___width: "460 ",
+					___height: "300 ",
+					___showbg: true,
+					___drag: "___boxTitle "
+
+				});
+			});
+			$("#user_exit ").click(function() {
+				localStorage.setItem('user', '');
+				user_right.innerHTML = '<a id="user_login " style="cursor: pointer; ">登录</a>';
+				alert('退出成功');
+				window.location.reload();
+			});
+		</script>
+		
+	</body>
+</html>

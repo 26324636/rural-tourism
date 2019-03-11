@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			#btn {
+				width: 200px;
+				height: 200px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="btn">
+			登录
+		</div>
+		<script type="text/javascript">
+			var btn = document.getElementById('btn');
+			var data = {
+				userAccount: 'yhm',
+				userPassword: 'mm'
+
+			};
+			btn.onclick = function() {
+				//				alert(11);
+
+				$.ajax({
+					type: 'GET',
+					async: true,
+					contentType: 'application/json',
+					processData: false,
+					dataType:'json',
+//					headers:{
+//						authorization:'WJi1xrshX+BKD3w849jj6GOhU57lObU+ociRwXn0+pBNjh1Yc22+ScRzOHVUFLIo/E6cPDn66JEmZGN1bFl78rkOgY2yYLDDnClqYI9bb6Y='
+//						
+//					},
+beforeSend : function(xhr) {
+xhr.setRequestHeader("authorization", "WJi1xrshX+BKD3w849jj6GOhU57lObU+ociRwXn0+pBNjh1Yc22+ScRzOHVUFLIo/E6cPDn66JEmZGN1bFl78rkOgY2yYLDDnClqYI9bb6Y=");
+},
+					url: 'https://www.sxscott.com/vehicle/vehicle/violation/detail?vehicle=YP001',
+					data:{
+//							userAccount: 123,
+//				            userPassword: 123
+					},
+					success: function(data) {
+						console.log(data)
+					},
+					error: function() {
+						alert('连接服务器失败！');
+					}
+
+				});
+			}
+		</script>
+		<script type="text/javascript" src="js/jquery-1.4.4.min.js"></script>
+	</body>
+
+</html>
